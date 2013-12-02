@@ -1,0 +1,9 @@
+<%= form_for(@challenge) do |f| %> 
+
+<%= f.text_field :name %>
+<%= select_tag(:difficulty, options_for_select([['Easy as pie', 1], ['Medium', 2], ['Hard as Sh*t', 3]])) %> 
+<%= form_for(@song) do |f| %> 
+<%= f.text_field :name %> 
+<%= f.submit %> 
+<% end %> 
+<% end %> 
