@@ -14,8 +14,8 @@ class ChallengesController < ApplicationController
   end
 
   def create 
-    @challenge = Challenge.new(challenge_params)
-    @song = @challenge.songs.build(song_params)
+    @challenge = Challenge.create(challenge_params)
+    params[:song].each {|song| @challenge.songs.build(:name => song)}
     @challenge.save
     redirect_to invite_friends_path(@challenge)
   end
@@ -29,10 +29,7 @@ class ChallengesController < ApplicationController
   private
 
     def challenge_params
-      params.require(:challenge).permit(:name, :difficulty)
+      params.require(:challenge).permit(:difficulty, :name)
     end
 
-    def song_params
-      params.require(:song).permit(:name)
-    end
 end

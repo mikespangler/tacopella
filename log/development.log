@@ -2318,3 +2318,2428 @@ ExecJS::RuntimeError - SyntaxError: reserved word "function"
 
 
 Started POST "/__better_errors/70162147694740/variables" for 127.0.0.1 at 2013-12-02 16:36:24 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-02 16:39:41 -0500
+Processing by ChallengesController#welcome as HTML
+  Rendered challenges/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 498ms
+
+ExecJS::RuntimeError - SyntaxError: reserved word "function"
+  (in /Users/tiffanypeon/Development/code/tacopella/app/assets/javascripts/challenges.js.coffee):
+  execjs (2.0.2) lib/execjs/external_runtime.rb:66:in `extract_result'
+  execjs (2.0.2) lib/execjs/external_runtime.rb:28:in `block in exec'
+  execjs (2.0.2) lib/execjs/external_runtime.rb:41:in `compile_to_tempfile'
+  execjs (2.0.2) lib/execjs/external_runtime.rb:27:in `exec'
+  execjs (2.0.2) lib/execjs/external_runtime.rb:19:in `eval'
+  execjs (2.0.2) lib/execjs/external_runtime.rb:33:in `call'
+  coffee-script (2.2.0) lib/coffee_script.rb:57:in `compile'
+  tilt (1.4.1) lib/tilt/coffee.rb:46:in `evaluate'
+  tilt (1.4.1) lib/tilt/template.rb:103:in `render'
+  sprockets (2.10.1) lib/sprockets/context.rb:197:in `block in evaluate'
+  sprockets (2.10.1) lib/sprockets/context.rb:194:in `evaluate'
+  sprockets (2.10.1) lib/sprockets/processed_asset.rb:12:in `initialize'
+  sprockets (2.10.1) lib/sprockets/base.rb:374:in `block in build_asset'
+  sprockets (2.10.1) lib/sprockets/base.rb:395:in `circular_call_protection'
+  sprockets (2.10.1) lib/sprockets/base.rb:373:in `build_asset'
+  sprockets (2.10.1) lib/sprockets/index.rb:94:in `block in build_asset'
+  sprockets (2.10.1) lib/sprockets/caching.rb:58:in `cache_asset'
+  sprockets (2.10.1) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.10.1) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.10.1) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.10.1) lib/sprockets/processed_asset.rb:44:in `block in init_with'
+  sprockets (2.10.1) lib/sprockets/processed_asset.rb:37:in `init_with'
+  sprockets (2.10.1) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.10.1) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.10.1) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.10.1) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.10.1) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.10.1) lib/sprockets/bundled_asset.rb:37:in `init_with'
+  sprockets (2.10.1) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.10.1) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.10.1) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.10.1) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.10.1) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.10.1) lib/sprockets/environment.rb:75:in `find_asset'
+  sprockets (2.10.1) lib/sprockets/base.rb:295:in `[]'
+   () Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247@global/gems/sprockets-rails-2.0.1/lib/sprockets/rails/helper.rb:144:in `lookup_asset_for_path'
+   () Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247@global/gems/sprockets-rails-2.0.1/lib/sprockets/rails/helper.rb:91:in `block in javascript_include_tag'
+   () Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247@global/gems/sprockets-rails-2.0.1/lib/sprockets/rails/helper.rb:90:in `javascript_include_tag'
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1005414606677543113_70162147692300'
+  actionpack (4.0.1) lib/action_view/template.rb:143:in `block in render'
+  activesupport (4.0.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.1) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.1) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.1) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162150811820/variables" for 127.0.0.1 at 2013-12-02 16:39:42 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-02 16:39:47 -0500
+Processing by ChallengesController#welcome as HTML
+  Rendered challenges/welcome.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 202ms (Views: 200.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 16:39:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 16:39:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 16:39:47 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 16:39:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 16:39:47 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 16:39:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 16:39:47 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 16:39:47 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 16:39:47 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 16:39:51 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 16:39:54 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>""}, "difficulty"=>"1", "song"=>[""]}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError - undefined method `permit' for [""]:Array:
+  app/controllers/challenges_controller.rb:36:in `song_params'
+  app/controllers/challenges_controller.rb:18:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162155149340/variables" for 127.0.0.1 at 2013-12-02 16:39:54 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 16:39:57 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>""}, "difficulty"=>"1", "song"=>[""]}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError - undefined method `permit' for [""]:Array:
+  app/controllers/challenges_controller.rb:36:in `song_params'
+  app/controllers/challenges_controller.rb:18:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162163296740/variables" for 127.0.0.1 at 2013-12-02 16:39:57 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 16:50:41 -0500
+Processing by ChallengesController#new as HTML
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError - undefined method `accepts_nested_attibutes_for' for #<Class:0x007f9fcd9f4448>:
+  activerecord (4.0.1) lib/active_record/dynamic_matchers.rb:22:in `method_missing'
+  app/models/challenge.rb:3:in `<class:Challenge>'
+  app/models/challenge.rb:1:in `<top (required)>'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:495:in `load_missing_constant'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:184:in `const_missing'
+  app/controllers/challenges_controller.rb:12:in `new'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162163267660/variables" for 127.0.0.1 at 2013-12-02 16:50:41 -0500
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT "challenges".* FROM "challenges"[0m
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 16:51:15 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 204ms (Views: 179.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 16:51:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:16 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 16:51:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:16 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:16 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 16:51:16 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:16 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 16:51:33 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 16:51:33 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 16:51:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:33 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:33 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 16:51:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:33 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 16:51:33 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 16:51:39 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>""}, "difficulty"=>"Easy as pie", "song"=>["blah"]}
+Completed 500 Internal Server Error in 42ms
+
+NoMethodError - undefined method `permit' for ["blah"]:Array:
+  app/controllers/challenges_controller.rb:36:in `song_params'
+  app/controllers/challenges_controller.rb:18:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162150251320/variables" for 127.0.0.1 at 2013-12-02 16:51:39 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 16:52:31 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>""}, "difficulty"=>"Easy as pie", "song"=>[""]}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError - undefined method `permit' for [""]:Array:
+  app/controllers/challenges_controller.rb:36:in `song_params'
+  app/controllers/challenges_controller.rb:18:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162147742460/variables" for 127.0.0.1 at 2013-12-02 16:52:31 -0500
+
+
+Started GET "/challenges" for 127.0.0.1 at 2013-12-02 16:52:49 -0500
+Processing by ChallengesController#index as HTML
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges"
+  Rendered challenges/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 16:52:49 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 16:52:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:49 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 16:52:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:49 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:49 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:49 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 16:52:53 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 16:52:53 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 16:52:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:53 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 16:52:53 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:53 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 16:52:53 -0500
+
+
+Started POST "/challenges/new" for 127.0.0.1 at 2013-12-02 16:52:55 -0500
+
+ActionController::RoutingError (No route matches [POST] "/challenges/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.1ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (105.3ms)
+
+
+Started POST "/challenges/new" for 127.0.0.1 at 2013-12-02 17:07:50 -0500
+
+ActionController::RoutingError (No route matches [POST] "/challenges/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (27.0ms)
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:08:16 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:08:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:08:16 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:08:16 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:08:16 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:08:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:08:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:08:16 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:08:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:08:16 -0500
+
+
+Started POST "/challenges/new" for 127.0.0.1 at 2013-12-02 17:08:17 -0500
+
+ActionController::RoutingError (No route matches [POST] "/challenges/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (24.1ms)
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:11:24 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:11:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:24 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:11:24 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:11:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:24 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:24 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:24 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:11:26 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:11:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:11:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:26 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:11:26 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:26 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:11:26 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:11:48 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"blueberries"}, "difficulty"=>"Easy as pie", "commit"=>"Create Challenge"}
+Completed 400 Bad Request in 2ms
+
+ActionController::ParameterMissing - param not found: song:
+  actionpack (4.0.1) lib/action_controller/metal/strong_parameters.rb:173:in `require'
+  app/controllers/challenges_controller.rb:36:in `song_params'
+  app/controllers/challenges_controller.rb:18:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162163405840/variables" for 127.0.0.1 at 2013-12-02 17:11:48 -0500
+
+
+Started GET "/challenge/new" for 127.0.0.1 at 2013-12-02 17:28:26 -0500
+
+ActionController::RoutingError (No route matches [GET] "/challenge/new"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/tiffanypeon/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (26.3ms)
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:28:29 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:28:29 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:28:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:28:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:28:29 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:28:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:28:29 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:28:29 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:28:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:28:29 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:36:24 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 18ms (Views: 11.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:36:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:24 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:36:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:25 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:36:25 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:25 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:25 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:36:43 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:36:43 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:36:43 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:43 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:36:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:43 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:36:43 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:37:35 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:37:35 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:37:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:37:35 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:37:35 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:37:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:37:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:37:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:37:35 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:37:35 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:37:49 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"whatever"}, "difficulty"=>"Easy as pie", "song"=>["britney", "lab", "meh"], "commit"=>"Create Challenge"}
+Completed 500 Internal Server Error in 9ms
+
+NameError - undefined local variable or method `songs' for #<ChallengesController:0x007f9fccbad970>:
+  app/controllers/challenges_controller.rb:36:in `song_params'
+  app/controllers/challenges_controller.rb:18:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162164302980/variables" for 127.0.0.1 at 2013-12-02 17:37:49 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:39:25 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 51ms (Views: 44.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:39:26 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:39:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:39:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:39:26 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:39:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:39:26 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:39:26 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:39:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:39:26 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:39:40 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"asdf"}, "difficulty"=>"Easy as pie", "song"=>["linda", "brit", "asdf", "fdg", ""], "commit"=>"Create Challenge"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError - undefined method `each' for :songs:Symbol:
+  app/controllers/challenges_controller.rb:18:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162163451500/variables" for 127.0.0.1 at 2013-12-02 17:39:40 -0500
+
+
+Started POST "/__better_errors/70162163451500/eval" for 127.0.0.1 at 2013-12-02 17:40:12 -0500
+
+
+Started POST "/__better_errors/70162163451500/eval" for 127.0.0.1 at 2013-12-02 17:40:18 -0500
+
+
+Started POST "/__better_errors/70162163451500/eval" for 127.0.0.1 at 2013-12-02 17:40:32 -0500
+
+
+Started POST "/__better_errors/70162163451500/eval" for 127.0.0.1 at 2013-12-02 17:41:04 -0500
+
+
+Started POST "/__better_errors/70162163451500/eval" for 127.0.0.1 at 2013-12-02 17:41:38 -0500
+
+
+Started POST "/__better_errors/70162163451500/eval" for 127.0.0.1 at 2013-12-02 17:41:44 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:42:55 -0500
+
+SyntaxError - /Users/tiffanypeon/Development/code/tacopella/app/controllers/challenges_controller.rb:18: syntax error, unexpected ')', expecting keyword_end:
+  activesupport (4.0.1) lib/active_support/dependencies.rb:424:in `'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.1) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.1) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.1) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162145968480/variables" for 127.0.0.1 at 2013-12-02 17:42:55 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:43:28 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 22ms (Views: 13.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:43:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:28 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:43:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:28 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:43:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:28 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:28 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:43:43 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"tiffany's"}, "difficulty"=>"Easy as pie", "song"=>["hit me baby", "throw it", "push it "], "commit"=>"Create Challenge"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/controllers/challenges_controller.rb:18:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162147926460/variables" for 127.0.0.1 at 2013-12-02 17:43:43 -0500
+
+
+Started POST "/__better_errors/70162147926460/eval" for 127.0.0.1 at 2013-12-02 17:43:51 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:43:58 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 21ms (Views: 14.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:43:58 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:43:58 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:58 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:43:58 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:43:58 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"blah"}, "difficulty"=>"Easy as pie", "song"=>["a thing", "whatever", "something else"], "commit"=>"Create Challenge"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "challenges" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 02 Dec 2013 22:44:07 UTC +00:00], ["name", "blah"], ["updated_at", Mon, 02 Dec 2013 22:44:07 UTC +00:00]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("challenge_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["challenge_id", 4], ["created_at", Mon, 02 Dec 2013 22:44:07 UTC +00:00], ["name", "a thing"], ["updated_at", Mon, 02 Dec 2013 22:44:07 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "songs" ("challenge_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["challenge_id", 4], ["created_at", Mon, 02 Dec 2013 22:44:07 UTC +00:00], ["name", "whatever"], ["updated_at", Mon, 02 Dec 2013 22:44:07 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "songs" ("challenge_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["challenge_id", 4], ["created_at", Mon, 02 Dec 2013 22:44:07 UTC +00:00], ["name", "something else"], ["updated_at", Mon, 02 Dec 2013 22:44:07 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/challenges/4/invite-friends
+Completed 302 Found in 24ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/challenges/4/invite-friends" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+Processing by ChallengesController#invite_friends as HTML
+  Parameters: {"id"=>"4"}
+  Rendered challenges/invite_friends.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:44:07 -0500
+
+
+Started GET "/challenges/4/invite-friends" for 127.0.0.1 at 2013-12-02 17:48:04 -0500
+Processing by ChallengesController#invite_friends as HTML
+  Parameters: {"id"=>"4"}
+  Rendered challenges/invite_friends.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:48:04 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:48:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:48:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:04 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:04 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:04 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-02 17:48:07 -0500
+Processing by ChallengesController#welcome as HTML
+  Rendered challenges/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:48:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:48:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:07 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:07 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:07 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:48:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:07 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:48:09 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 19ms (Views: 10.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"whatever"}, "difficulty"=>"medium", "song"=>["stuff"]}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "challenges" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 02 Dec 2013 22:48:17 UTC +00:00], ["name", "whatever"], ["updated_at", Mon, 02 Dec 2013 22:48:17 UTC +00:00]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "songs" ("challenge_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["challenge_id", 5], ["created_at", Mon, 02 Dec 2013 22:48:17 UTC +00:00], ["name", "stuff"], ["updated_at", Mon, 02 Dec 2013 22:48:17 UTC +00:00]]
+  [1m[35m (51.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/challenges/5/invite-friends
+Completed 302 Found in 69ms (ActiveRecord: 53.1ms)
+
+
+Started GET "/challenges/5/invite-friends" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+Processing by ChallengesController#invite_friends as HTML
+  Parameters: {"id"=>"5"}
+  Rendered challenges/invite_friends.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:48:17 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:49:16 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 21ms (Views: 13.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:49:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:49:16 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:49:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:49:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:49:16 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:49:16 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:49:16 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:49:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:49:16 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:49:20 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"blahe"}, "difficulty"=>"easy", "song"=>[""], "commit"=>"Create Challenge"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"blahe"}, "difficulty"=>"easy", "song"=>[""], "commit"=>"Create Challenge", "action"=>"create", "controller"=>"challenges"}:
+  app/controllers/challenges_controller.rb:17:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162156019260/variables" for 127.0.0.1 at 2013-12-02 17:49:20 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:50:09 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:50:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:50:09 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:50:09 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:50:09 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:50:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:50:09 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:50:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:50:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:50:09 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:50:14 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"blah"}, "difficulty"=>"1", "song"=>[""], "commit"=>"Create Challenge"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"blah"}, "difficulty"=>"1", "song"=>[""], "commit"=>"Create Challenge", "action"=>"create", "controller"=>"challenges"}:
+  app/controllers/challenges_controller.rb:17:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162155122620/variables" for 127.0.0.1 at 2013-12-02 17:50:14 -0500
+
+
+Started POST "/__better_errors/70162155122620/eval" for 127.0.0.1 at 2013-12-02 17:50:23 -0500
+
+
+Started POST "/__better_errors/70162155122620/eval" for 127.0.0.1 at 2013-12-02 17:50:40 -0500
+
+
+Started POST "/__better_errors/70162155122620/eval" for 127.0.0.1 at 2013-12-02 17:50:47 -0500
+
+
+Started GET "/challenges/mew" for 127.0.0.1 at 2013-12-02 17:52:41 -0500
+Processing by ChallengesController#show as HTML
+  Parameters: {"id"=>"mew"}
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "mew"]]
+Completed 404 Not Found in 7ms
+
+ActiveRecord::RecordNotFound - Couldn't find Challenge with id=mew:
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:198:in `raise_record_not_found_exception!'
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:284:in `find_one'
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:268:in `find_with_ids'
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:35:in `find'
+  activerecord-deprecated_finders (1.0.3) lib/active_record/deprecated_finders/relation.rb:122:in `find'
+  activerecord (4.0.1) lib/active_record/querying.rb:3:in `find'
+  app/controllers/challenges_controller.rb:8:in `show'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162163501500/variables" for 127.0.0.1 at 2013-12-02 17:52:41 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:52:43 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 22ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:52:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:52:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:52:43 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:52:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:52:43 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:52:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:52:43 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:52:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:52:43 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:52:47 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"blah"}, "difficulty"=>"1", "song"=>[""], "commit"=>"Create Challenge"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"blah"}, "difficulty"=>"1", "song"=>[""], "commit"=>"Create Challenge", "action"=>"create", "controller"=>"challenges"}:
+  app/controllers/challenges_controller.rb:17:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162147692940/variables" for 127.0.0.1 at 2013-12-02 17:52:47 -0500
+
+
+Started POST "/__better_errors/70162147692940/eval" for 127.0.0.1 at 2013-12-02 17:52:59 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:53:29 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (72.6ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:53:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:53:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:53:29 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:53:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:53:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:53:29 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:53:29 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:53:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:53:29 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:53:32 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"blah", "difficulty"=>"1"}, "song"=>[""], "commit"=>"Create Challenge"}
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"blah", "difficulty"=>"1"}, "song"=>[""], "commit"=>"Create Challenge", "action"=>"create", "controller"=>"challenges"}:
+  app/controllers/challenges_controller.rb:17:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3939479900439656137__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3004885230659789925__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70162154681300/variables" for 127.0.0.1 at 2013-12-02 17:53:33 -0500
+
+
+Started POST "/__better_errors/70162154681300/eval" for 127.0.0.1 at 2013-12-02 17:53:37 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 17:54:13 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:54:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:13 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:54:13 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:13 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:54:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:13 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:13 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75aiTyrvwbjYL/pEwJ47taAyhFZF5jfh1FjvCh+W94k=", "challenge"=>{"name"=>"britney songs", "difficulty"=>"3"}, "song"=>["hit me baby", "dear diary", "toxic"], "commit"=>"Create Challenge"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 02 Dec 2013 22:54:29 UTC +00:00], ["difficulty", 3], ["name", "britney songs"], ["updated_at", Mon, 02 Dec 2013 22:54:29 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "songs" ("challenge_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["challenge_id", 6], ["created_at", Mon, 02 Dec 2013 22:54:29 UTC +00:00], ["name", "hit me baby"], ["updated_at", Mon, 02 Dec 2013 22:54:29 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("challenge_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["challenge_id", 6], ["created_at", Mon, 02 Dec 2013 22:54:29 UTC +00:00], ["name", "dear diary"], ["updated_at", Mon, 02 Dec 2013 22:54:29 UTC +00:00]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("challenge_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["challenge_id", 6], ["created_at", Mon, 02 Dec 2013 22:54:29 UTC +00:00], ["name", "toxic"], ["updated_at", Mon, 02 Dec 2013 22:54:29 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/challenges/6/invite-friends
+Completed 302 Found in 25ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/challenges/6/invite-friends" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+Processing by ChallengesController#invite_friends as HTML
+  Parameters: {"id"=>"6"}
+  Rendered challenges/invite_friends.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500

@@ -1,8 +1,10 @@
 class Challenge < ActiveRecord::Base
   has_many :songs
 
-  EASY = 1
-  MEDIUM = 2
-  HARD = 3
-  
+  Difficulty = {
+    :easy => 1,
+    :medium => 2,
+    :hard => 3
+  }
+
 end
