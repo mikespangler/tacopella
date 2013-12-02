@@ -4743,3 +4743,51 @@ Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:54:29 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-02 17:56:26 -0500
+Processing by ChallengesController#welcome as HTML
+  Rendered challenges/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 17:56:26 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 17:56:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 17:56:26 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 17:56:26 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 17:56:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 17:56:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 17:56:26 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 17:56:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 17:56:26 -0500
+
+
+Started GET "/challenges" for 127.0.0.1 at 2013-12-02 17:56:28 -0500
+Processing by ChallengesController#index as HTML
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges"
+  Rendered challenges/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/challenges/5" for 127.0.0.1 at 2013-12-02 17:56:29 -0500
+Processing by ChallengesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered challenges/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.2ms)
