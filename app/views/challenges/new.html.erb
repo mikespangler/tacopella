@@ -2,8 +2,19 @@
 
 <%= f.text_field :name %>
 <%= select_tag(:difficulty, options_for_select([['Easy as pie', 1], ['Medium', 2], ['Hard as Sh*t', 3]])) %> 
-<%= form_for(@song) do |f| %> 
-<%= f.text_field :name %> 
+<form method="post" action="#">
+    
+    <label>Add songs</label>
+    
+    <fieldset id="songs">
+        <div class="song">
+            <input type="text" name="song[]"><button class="remove">x</button>
+        </div>
+    </fieldset>
+            
+    <button id="add_song">add songs</button>
+    
+</form>
+
 <%= f.submit %> 
-<% end %> 
 <% end %> 
