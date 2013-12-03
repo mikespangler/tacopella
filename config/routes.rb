@@ -2,7 +2,8 @@ Tacopella::Application.routes.draw do
   resources :songs
 
   resources :challenges
-    post 'challenges/invite-friends' => 'challenges#invite_friends', :as => :invite_friends
+    get 'challenges/:id/invite-friends' => 'challenges#invite_friends_form', :as => :invite_friends
+    post 'challenges/invite-friends' => 'challenges#invite_friends'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

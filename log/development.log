@@ -4793,6 +4793,7 @@ Processing by ChallengesController#show as HTML
 Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.2ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2013-12-02 20:55:14 -0500
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by ChallengesController#welcome as HTML
@@ -4807,6 +4808,149 @@ Started GET "/hello.js" for 127.0.0.1 at 2013-12-02 20:55:16 -0500
 
 ActionController::RoutingError (No route matches [GET] "/hello.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+Started GET "/" for 127.0.0.1 at 2013-12-02 20:53:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChallengesController#welcome as HTML
+  Rendered challenges/welcome.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1187ms (Views: 1147.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 20:53:11 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 20:53:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 20:53:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 20:53:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 20:53:11 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 20:53:11 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 20:53:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 20:53:11 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 20:53:11 -0500
+
+
+Started GET "/challenges" for 127.0.0.1 at 2013-12-02 20:53:15 -0500
+Processing by ChallengesController#index as HTML
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges"
+  Rendered challenges/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 42ms (Views: 22.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/challenges/1" for 127.0.0.1 at 2013-12-02 20:53:16 -0500
+Processing by ChallengesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered challenges/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 20:53:37 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (89.4ms)
+Completed 200 OK in 114ms (Views: 97.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/challenges" for 127.0.0.1 at 2013-12-02 20:53:43 -0500
+Processing by ChallengesController#index as HTML
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges"
+  Rendered challenges/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 20:53:45 -0500
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 20:54:15 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"amNybE0RUrzgOD26qvr0yqp3iApZjNlBFel86E9EtEA=", "challenge"=>{"name"=>"Shostakovich string quartets", "difficulty"=>"3"}, "song"=>["no.8 mvmt 2"]}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (53.9ms)[0m  INSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Tue, 03 Dec 2013 01:54:15 UTC +00:00], ["difficulty", 3], ["name", "Shostakovich string quartets"], ["updated_at", Tue, 03 Dec 2013 01:54:15 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "songs" ("challenge_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["challenge_id", 7], ["created_at", Tue, 03 Dec 2013 01:54:16 UTC +00:00], ["name", "no.8 mvmt 2"], ["updated_at", Tue, 03 Dec 2013 01:54:16 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/challenges/invite-friends.7
+Completed 302 Found in 198ms (ActiveRecord: 57.6ms)
+
+
+Started GET "/challenges/invite-friends.7" for 127.0.0.1 at 2013-12-02 20:54:16 -0500
+Processing by ChallengesController#show as 
+  Parameters: {"id"=>"invite-friends"}
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "invite-friends"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound - Couldn't find Challenge with id=invite-friends:
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:198:in `raise_record_not_found_exception!'
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:284:in `find_one'
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:268:in `find_with_ids'
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:35:in `find'
+  activerecord-deprecated_finders (1.0.3) lib/active_record/deprecated_finders/relation.rb:122:in `find'
+  activerecord (4.0.1) lib/active_record/querying.rb:3:in `find'
+  app/controllers/challenges_controller.rb:8:in `show'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__2697241040043491638__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__4125412912674910837__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 50e27f860708590597b7a961b95a3b4388c57f22
   actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
   railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
@@ -4826,6 +4970,7 @@ ActionController::RoutingError (No route matches [GET] "/hello.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -4841,6 +4986,90 @@ Started GET "/token.js" for 127.0.0.1 at 2013-12-02 20:55:16 -0500
 
 ActionController::RoutingError (No route matches [GET] "/token.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70311915166360/variables" for 127.0.0.1 at 2013-12-02 20:54:16 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 20:54:19 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"amNybE0RUrzgOD26qvr0yqp3iApZjNlBFel86E9EtEA=", "challenge"=>{"name"=>"Shostakovich string quartets", "difficulty"=>"3"}, "song"=>["no.8 mvmt 2"], "commit"=>"Create Challenge"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 03 Dec 2013 01:54:19 UTC +00:00], ["difficulty", 3], ["name", "Shostakovich string quartets"], ["updated_at", Tue, 03 Dec 2013 01:54:19 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("challenge_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["challenge_id", 8], ["created_at", Tue, 03 Dec 2013 01:54:19 UTC +00:00], ["name", "no.8 mvmt 2"], ["updated_at", Tue, 03 Dec 2013 01:54:19 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/challenges/invite-friends.8
+Completed 302 Found in 9ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/challenges/invite-friends.8" for 127.0.0.1 at 2013-12-02 20:54:19 -0500
+Processing by ChallengesController#show as 
+  Parameters: {"id"=>"invite-friends"}
+  [1m[35mChallenge Load (0.4ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "invite-friends"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound - Couldn't find Challenge with id=invite-friends:
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:198:in `raise_record_not_found_exception!'
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:284:in `find_one'
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:268:in `find_with_ids'
+  activerecord (4.0.1) lib/active_record/relation/finder_methods.rb:35:in `find'
+  activerecord-deprecated_finders (1.0.3) lib/active_record/deprecated_finders/relation.rb:122:in `find'
+  activerecord (4.0.1) lib/active_record/querying.rb:3:in `find'
+  app/controllers/challenges_controller.rb:8:in `show'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__2697241040043491638__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__4125412912674910837__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 50e27f860708590597b7a961b95a3b4388c57f22
   actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
   railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
@@ -4860,6 +5089,7 @@ ActionController::RoutingError (No route matches [GET] "/token.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -4877,6 +5107,108 @@ Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 20:55:16 -050
 Started GET "/jquery-1.5.1.min.js" for 127.0.0.1 at 2013-12-02 20:55:16 -0500
 
 ActionController::RoutingError (No route matches [GET] "/jquery-1.5.1.min.js"):
+=======
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70311918319500/variables" for 127.0.0.1 at 2013-12-02 20:54:19 -0500
+
+
+Started POST "/__better_errors/70311918319500/variables" for 127.0.0.1 at 2013-12-02 20:54:30 -0500
+
+
+Started POST "/__better_errors/70311918319500/variables" for 127.0.0.1 at 2013-12-02 20:54:43 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-02 21:44:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChallengesController#new as HTML
+  Rendered challenges/new.html.erb within layouts/application (75.3ms)
+Completed 200 OK in 251ms (Views: 191.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 21:44:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 21:44:59 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 21:44:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 21:44:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 21:44:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 21:44:59 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 21:44:59 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 21:44:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 21:44:59 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"amNybE0RUrzgOD26qvr0yqp3iApZjNlBFel86E9EtEA=", "challenge"=>{"name"=>"Shostakovich string quartets", "difficulty"=>"2"}, "song"=>["no.8 mvmt 2"], "commit"=>"Create Challenge"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (61.4ms)[0m  [1mINSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 03 Dec 2013 02:45:07 UTC +00:00], ["difficulty", 2], ["name", "Shostakovich string quartets"], ["updated_at", Tue, 03 Dec 2013 02:45:07 UTC +00:00]]
+  [1m[35m (261.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "songs" ("challenge_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["challenge_id", 9], ["created_at", Tue, 03 Dec 2013 02:45:07 UTC +00:00], ["name", "no.8 mvmt 2"], ["updated_at", Tue, 03 Dec 2013 02:45:07 UTC +00:00]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/challenges/9/invite-friends
+Completed 302 Found in 500ms (ActiveRecord: 326.2ms)
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 21:45:07 -0500
+
+
+Started POST "/challenges/9" for 127.0.0.1 at 2013-12-02 21:45:27 -0500
+
+ActionController::RoutingError (No route matches [POST] "/challenges/9"):
+>>>>>>> 50e27f860708590597b7a961b95a3b4388c57f22
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
@@ -4897,6 +5229,7 @@ ActionController::RoutingError (No route matches [GET] "/jquery-1.5.1.min.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -4941,6 +5274,57 @@ Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.0ms)
 Started GET "/application.js" for 127.0.0.1 at 2013-12-02 20:58:58 -0500
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
+=======
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (60.8ms)
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 21:47:12 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 21:47:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 21:47:12 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 21:47:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:12 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:12 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:12 -0500
+
+
+Started POST "/challenges/9" for 127.0.0.1 at 2013-12-02 21:47:26 -0500
+
+ActionController::RoutingError (No route matches [POST] "/challenges/9"):
+>>>>>>> 50e27f860708590597b7a961b95a3b4388c57f22
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
@@ -4961,6 +5345,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -4978,6 +5363,162 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 20:58:5
 Started GET "/jquery-1.5.1.min.js" for 127.0.0.1 at 2013-12-02 20:58:58 -0500
 
 ActionController::RoutingError (No route matches [GET] "/jquery-1.5.1.min.js"):
+=======
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.4ms)
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 21:47:30 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 21:47:30 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 21:47:30 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 21:47:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:30 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:30 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 21:47:30 -0500
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 21:48:02 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 21:48:03 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 21:48:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 21:48:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 21:48:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 21:48:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 21:48:03 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 21:48:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 21:48:03 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 21:48:03 -0500
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 21:49:30 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 21:49:30 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 21:49:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:30 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:30 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 21:49:30 -0500
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 21:49:34 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 21:49:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 21:49:34 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 21:49:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:34 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:34 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 21:49:34 -0500
+
+
+Started POST "/challenges/9/challenges/invite_friends" for 127.0.0.1 at 2013-12-02 21:50:05 -0500
+
+ActionController::RoutingError (No route matches [POST] "/challenges/9/challenges/invite_friends"):
+>>>>>>> 50e27f860708590597b7a961b95a3b4388c57f22
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
@@ -4998,6 +5539,7 @@ ActionController::RoutingError (No route matches [GET] "/jquery-1.5.1.min.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -5045,6 +5587,57 @@ Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
 Started GET "/application.js" for 127.0.0.1 at 2013-12-02 20:59:24 -0500
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
+=======
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.2ms)
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 21:50:22 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 21:50:22 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 21:50:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 21:50:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 21:50:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 21:50:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 21:50:22 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 21:50:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 21:50:22 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 21:50:22 -0500
+
+
+Started POST "/challenges/invite_friends" for 127.0.0.1 at 2013-12-02 21:50:32 -0500
+
+ActionController::RoutingError (No route matches [POST] "/challenges/invite_friends"):
+>>>>>>> 50e27f860708590597b7a961b95a3b4388c57f22
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
@@ -5065,6 +5658,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -5128,6 +5722,170 @@ Started GET "/application.js" for 127.0.0.1 at 2013-12-02 20:59:26 -0500
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.8ms)
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 21:54:31 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 21:54:31 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 21:54:31 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 21:54:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 21:54:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 21:54:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 21:54:31 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 21:54:31 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 21:54:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 21:54:31 -0500
+
+
+Started POST "/challenges/invite-friends" for 127.0.0.1 at 2013-12-02 21:58:32 -0500
+Processing by ChallengesController#invite_friends as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"amNybE0RUrzgOD26qvr0yqp3iApZjNlBFel86E9EtEA=", "sender"=>"daniel.chang85@gmail.com", "content"=>"1800calldan@gmail.com", "id"=>"9", "commit"=>"Send"}
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered challenge_mailer/invite_friends.html.erb (0.9ms)
+  Rendered challenge_mailer/invite_friends.text.erb (0.6ms)
+
+Sent mail to #<Proc:0x007fc1a8ed4600@/Users/dbc26/Dropbox/development/projects/tacopella/app/mailers/challenge_mailer.rb:7> (1564.7ms)
+Date: Mon, 02 Dec 2013 21:58:33 -0500
+From: tacopella.app@gmail.com
+to: #<Proc:0x007fc1a8ed4600@/Users/dbc26/Dropbox/development/projects/tacopella/app/mailers/challenge_mailer.rb:7>
+Message-ID: <529d48d97b760_7fc3fe0d47db0a05189@Daniel-Changs-iMac.local.mail>
+Subject: Your friend sent you a song challenge!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_529d48d96c279_7fc3fe0d47db0a05089";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_529d48d96c279_7fc3fe0d47db0a05089
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Tacopella
+=============================================
+
+daniel.chang85@gmail.com has sent you a song challenge. Click below to take it on!
+http://tacopella.herokuapp.com/challenges/9
+----==_mimepart_529d48d96c279_7fc3fe0d47db0a05089
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Tacopella</h1>
+    daniel.chang85@gmail.com has sent you a song challenge. Click below to take it on!
+    <br>
+    http://tacopella.herokuapp.com/challenges/9
+  </body>
+</html>
+----==_mimepart_529d48d96c279_7fc3fe0d47db0a05089--
+
+Completed 500 Internal Server Error in 2265ms
+
+Net::SMTPFatalError - 555 5.5.2 Syntax error. u17sm2448691qeb.4 - gsmtp
+:
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:950:in `check_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:919:in `getok'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:862:in `rcptto'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:843:in `block in rcptto_list'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:841:in `rcptto_list'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:662:in `send_message'
+  mail (2.5.4) lib/mail/network/delivery_methods/smtp.rb:113:in `block in deliver!'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:520:in `start'
+  mail (2.5.4) lib/mail/network/delivery_methods/smtp.rb:112:in `deliver!'
+  mail (2.5.4) lib/mail/message.rb:2129:in `do_delivery'
+  mail (2.5.4) lib/mail/message.rb:232:in `block in deliver'
+  actionmailer (4.0.1) lib/action_mailer/base.rb:456:in `block in deliver_mail'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionmailer (4.0.1) lib/action_mailer/base.rb:454:in `deliver_mail'
+  mail (2.5.4) lib/mail/message.rb:232:in `deliver'
+  app/controllers/challenges_controller.rb:34:in `invite_friends'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__1572316996029337280__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__1537926671652293031__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
   actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
   railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
@@ -5147,6 +5905,223 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70234891812720/variables" for 127.0.0.1 at 2013-12-02 21:58:35 -0500
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 22:03:48 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 22:03:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 22:03:48 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 22:03:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:48 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:48 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:48 -0500
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 22:03:50 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 22:03:50 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 22:03:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 22:03:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:50 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:50 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 22:03:50 -0500
+
+
+Started POST "/challenges/invite-friends" for 127.0.0.1 at 2013-12-02 22:03:56 -0500
+Processing by ChallengesController#invite_friends as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"amNybE0RUrzgOD26qvr0yqp3iApZjNlBFel86E9EtEA=", "sender"=>"daniel.chang85@gmail.com", "receivers"=>"1800calldan@gmail.com", "id"=>"9", "commit"=>"Send"}
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered challenge_mailer/invite_friends.html.erb (0.8ms)
+  Rendered challenge_mailer/invite_friends.text.erb (0.2ms)
+
+Sent mail to #<Proc:0x007fc1a9609150@/Users/dbc26/Dropbox/development/projects/tacopella/app/mailers/challenge_mailer.rb:7> (1463.0ms)
+Date: Mon, 02 Dec 2013 22:03:56 -0500
+From: tacopella.app@gmail.com
+to: #<Proc:0x007fc1a9609150@/Users/dbc26/Dropbox/development/projects/tacopella/app/mailers/challenge_mailer.rb:7>
+Message-ID: <529d4a1cb9a0c_7fc3fe0d4be5d445379@Daniel-Changs-iMac.local.mail>
+Subject: Your friend sent you a song challenge!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_529d4a1cb6c08_7fc3fe0d4be5d4452d4";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_529d4a1cb6c08_7fc3fe0d4be5d4452d4
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Tacopella
+=============================================
+
+daniel.chang85@gmail.com has sent you a song challenge. Click below to take it on!
+http://tacopella.herokuapp.com/challenges/9
+----==_mimepart_529d4a1cb6c08_7fc3fe0d4be5d4452d4
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Tacopella</h1>
+    daniel.chang85@gmail.com has sent you a song challenge. Click below to take it on!
+    <br>
+    http://tacopella.herokuapp.com/challenges/9
+  </body>
+</html>
+----==_mimepart_529d4a1cb6c08_7fc3fe0d4be5d4452d4--
+
+Completed 500 Internal Server Error in 1500ms
+
+Net::SMTPFatalError - 555 5.5.2 Syntax error. o10sm1185332qaa.6 - gsmtp
+:
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:950:in `check_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:919:in `getok'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:862:in `rcptto'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:843:in `block in rcptto_list'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:841:in `rcptto_list'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:662:in `send_message'
+  mail (2.5.4) lib/mail/network/delivery_methods/smtp.rb:113:in `block in deliver!'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:520:in `start'
+  mail (2.5.4) lib/mail/network/delivery_methods/smtp.rb:112:in `deliver!'
+  mail (2.5.4) lib/mail/message.rb:2129:in `do_delivery'
+  mail (2.5.4) lib/mail/message.rb:232:in `block in deliver'
+  actionmailer (4.0.1) lib/action_mailer/base.rb:456:in `block in deliver_mail'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionmailer (4.0.1) lib/action_mailer/base.rb:454:in `deliver_mail'
+  mail (2.5.4) lib/mail/message.rb:232:in `deliver'
+  app/controllers/challenges_controller.rb:34:in `invite_friends'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__1572316996029337280__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__1537926671652293031__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 50e27f860708590597b7a961b95a3b4388c57f22
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -5192,6 +6167,229 @@ Started GET "/application.js" for 127.0.0.1 at 2013-12-02 21:06:54 -0500
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70234870243740/variables" for 127.0.0.1 at 2013-12-02 22:03:58 -0500
+
+
+Started POST "/__better_errors/70234870243740/eval" for 127.0.0.1 at 2013-12-02 22:04:09 -0500
+
+
+Started POST "/__better_errors/70234870243740/eval" for 127.0.0.1 at 2013-12-02 22:04:15 -0500
+
+
+Started POST "/__better_errors/70234870243740/eval" for 127.0.0.1 at 2013-12-02 22:04:54 -0500
+  Rendered challenge_mailer/invite_friends.html.erb (0.4ms)
+  Rendered challenge_mailer/invite_friends.text.erb (0.2ms)
+
+
+Started POST "/__better_errors/70234870243740/eval" for 127.0.0.1 at 2013-12-02 22:04:59 -0500
+  Rendered challenge_mailer/invite_friends.html.erb (0.4ms)
+  Rendered challenge_mailer/invite_friends.text.erb (0.2ms)
+
+Sent mail to #<Proc:0x007fc1aba1f990@/Users/dbc26/Dropbox/development/projects/tacopella/app/mailers/challenge_mailer.rb:7> (4831.3ms)
+Date: Mon, 02 Dec 2013 22:04:59 -0500
+From: tacopella.app@gmail.com
+to: #<Proc:0x007fc1aba1f990@/Users/dbc26/Dropbox/development/projects/tacopella/app/mailers/challenge_mailer.rb:7>
+Message-ID: <529d4a5b87636_7fc3fe0d5c2c5a456dd@Daniel-Changs-iMac.local.mail>
+Subject: Your friend sent you a song challenge!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_529d4a5b8586e_7fc3fe0d5c2c5a455c8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_529d4a5b8586e_7fc3fe0d5c2c5a455c8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Tacopella
+=============================================
+
+dan@dan.com has sent you a song challenge. Click below to take it on!
+http://tacopella.herokuapp.com/challenges/9
+----==_mimepart_529d4a5b8586e_7fc3fe0d5c2c5a455c8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Tacopella</h1>
+    dan@dan.com has sent you a song challenge. Click below to take it on!
+    <br>
+    http://tacopella.herokuapp.com/challenges/9
+  </body>
+</html>
+----==_mimepart_529d4a5b8586e_7fc3fe0d5c2c5a455c8--
+
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 22:10:09 -0500
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 10.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 22:10:09 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 22:10:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 22:10:09 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 22:10:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 22:10:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 22:10:09 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 22:10:09 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 22:10:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 22:10:09 -0500
+
+
+Started POST "/challenges/invite-friends" for 127.0.0.1 at 2013-12-02 22:10:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChallengesController#invite_friends as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"amNybE0RUrzgOD26qvr0yqp3iApZjNlBFel86E9EtEA=", "sender"=>"daniel.chang85@gmail.com", "receivers"=>"1800calldan@gmail.com\r\n", "id"=>"9", "commit"=>"Send"}
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered challenge_mailer/invite_friends.html.erb (1.7ms)
+  Rendered challenge_mailer/invite_friends.text.erb (0.7ms)
+
+Sent mail to #<Proc:0x007fa543f59c50@/Users/dbc26/Dropbox/development/projects/tacopella/app/mailers/challenge_mailer.rb:7> (1396.2ms)
+Date: Mon, 02 Dec 2013 22:10:29 -0500
+From: tacopella.app@gmail.com
+to: #<Proc:0x007fa543f59c50@/Users/dbc26/Dropbox/development/projects/tacopella/app/mailers/challenge_mailer.rb:7>
+Message-ID: <529d4ba554497_8743fd2a1f881908867f@Daniel-Changs-iMac.local.mail>
+Subject: Your friend sent you a song challenge!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_529d4ba551b4e_8743fd2a1f8819088595";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_529d4ba551b4e_8743fd2a1f8819088595
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Tacopella
+=============================================
+
+daniel.chang85@gmail.com has sent you a song challenge. Click below to take it on!
+http://tacopella.herokuapp.com/challenges/9
+----==_mimepart_529d4ba551b4e_8743fd2a1f8819088595
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Tacopella</h1>
+    daniel.chang85@gmail.com has sent you a song challenge. Click below to take it on!
+    <br>
+    http://tacopella.herokuapp.com/challenges/9
+  </body>
+</html>
+----==_mimepart_529d4ba551b4e_8743fd2a1f8819088595--
+
+Completed 500 Internal Server Error in 1839ms
+
+Net::SMTPFatalError - 555 5.5.2 Syntax error. ki4sm2588590qeb.0 - gsmtp
+:
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:950:in `check_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:919:in `getok'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:862:in `rcptto'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:843:in `block in rcptto_list'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:841:in `rcptto_list'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:662:in `send_message'
+  mail (2.5.4) lib/mail/network/delivery_methods/smtp.rb:113:in `block in deliver!'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/smtp.rb:520:in `start'
+  mail (2.5.4) lib/mail/network/delivery_methods/smtp.rb:112:in `deliver!'
+  mail (2.5.4) lib/mail/message.rb:2129:in `do_delivery'
+  mail (2.5.4) lib/mail/message.rb:232:in `block in deliver'
+  actionmailer (4.0.1) lib/action_mailer/base.rb:456:in `block in deliver_mail'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionmailer (4.0.1) lib/action_mailer/base.rb:454:in `deliver_mail'
+  mail (2.5.4) lib/mail/message.rb:232:in `deliver'
+  app/controllers/challenges_controller.rb:34:in `invite_friends'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__3216825992974169859__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__3385761690324129021__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 50e27f860708590597b7a961b95a3b4388c57f22
   actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
   railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
@@ -5211,6 +6409,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -5247,3 +6446,322 @@ Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 21:06:54 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 21:06:54 -0500
+=======
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70173887350560/variables" for 127.0.0.1 at 2013-12-02 22:10:30 -0500
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 22:18:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 156ms (Views: 119.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 22:18:12 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 22:18:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 22:18:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 22:18:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 22:18:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 22:18:12 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 22:18:12 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 22:18:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 22:18:12 -0500
+
+
+Started POST "/challenges/invite-friends" for 127.0.0.1 at 2013-12-02 22:18:19 -0500
+Processing by ChallengesController#invite_friends as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"amNybE0RUrzgOD26qvr0yqp3iApZjNlBFel86E9EtEA=", "sender"=>"daniel.chang85@gmail.com", "receivers"=>"1800calldan@gmail.com", "id"=>"9", "commit"=>"Send"}
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered challenge_mailer/invite_friends.html.erb (0.9ms)
+  Rendered challenge_mailer/invite_friends.text.erb (0.6ms)
+
+Sent mail to 1800calldan@gmail.com (2635.1ms)
+Date: Mon, 02 Dec 2013 22:18:19 -0500
+From: tacopella.app@gmail.com
+To: 1800calldan@gmail.com
+Message-ID: <529d4d7babcd7_8a83fd75460fb2415e5@Daniel-Changs-iMac.local.mail>
+Subject: Your friend sent you a song challenge!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_529d4d7b9f72f_8a83fd75460fb2414a7";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_529d4d7b9f72f_8a83fd75460fb2414a7
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Tacopella
+=============================================
+
+daniel.chang85@gmail.com has sent you a song challenge. Click below to take it on!
+http://tacopella.herokuapp.com/challenges/9
+----==_mimepart_529d4d7b9f72f_8a83fd75460fb2414a7
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Tacopella</h1>
+    daniel.chang85@gmail.com has sent you a song challenge. Click below to take it on!
+    <br>
+    http://tacopella.herokuapp.com/challenges/9
+  </body>
+</html>
+----==_mimepart_529d4d7b9f72f_8a83fd75460fb2414a7--
+
+Completed 500 Internal Server Error in 3103ms
+
+ActionView::MissingTemplate - Missing template challenges/invite_friends, application/invite_friends with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/dbc26/Dropbox/development/projects/tacopella/app/views"
+:
+  actionpack (4.0.1) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.1) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.1) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.1) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:403:in `_run__4099332799640821495__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__598804390423062080__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70194066671200/variables" for 127.0.0.1 at 2013-12-02 22:18:22 -0500
+
+
+Started GET "/challenges/9/invite-friends" for 127.0.0.1 at 2013-12-02 22:21:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChallengesController#invite_friends_form as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered challenges/invite_friends_form.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 115ms (Views: 74.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 22:21:24 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 22:21:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 22:21:24 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:25 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:25 -0500
+
+
+Started POST "/challenges/invite-friends" for 127.0.0.1 at 2013-12-02 22:21:35 -0500
+Processing by ChallengesController#invite_friends as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"amNybE0RUrzgOD26qvr0yqp3iApZjNlBFel86E9EtEA=", "sender"=>"daniel.chang85@gmail.com", "receivers"=>"1800calldan@gmail.com", "id"=>"9", "commit"=>"Send"}
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered challenge_mailer/invite_friends.html.erb (0.9ms)
+  Rendered challenge_mailer/invite_friends.text.erb (0.7ms)
+
+Sent mail to 1800calldan@gmail.com (2505.4ms)
+Date: Mon, 02 Dec 2013 22:21:35 -0500
+From: tacopella.app@gmail.com
+To: 1800calldan@gmail.com
+Message-ID: <529d4e3f862ec_8d03fda88759b1095877@Daniel-Changs-iMac.local.mail>
+Subject: Your friend sent you a song challenge!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_529d4e3f7a3cc_8d03fda88759b1095718";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_529d4e3f7a3cc_8d03fda88759b1095718
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome to Tacopella
+=============================================
+
+daniel.chang85@gmail.com has sent you a song challenge. Click below to take it on!
+http://tacopella.herokuapp.com/challenges/9
+----==_mimepart_529d4e3f7a3cc_8d03fda88759b1095718
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Tacopella</h1>
+    daniel.chang85@gmail.com has sent you a song challenge. Click below to take it on!
+    <br>
+    http://tacopella.herokuapp.com/challenges/9
+  </body>
+</html>
+----==_mimepart_529d4e3f7a3cc_8d03fda88759b1095718--
+
+Redirected to http://localhost:3000/challenges
+Completed 302 Found in 2963ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/challenges" for 127.0.0.1 at 2013-12-02 22:21:38 -0500
+Processing by ChallengesController#index as HTML
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges"
+  Rendered challenges/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-02 22:21:38 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-02 22:21:38 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-02 22:21:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:38 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:38 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-02 22:21:38 -0500
+>>>>>>> 50e27f860708590597b7a961b95a3b4388c57f22
