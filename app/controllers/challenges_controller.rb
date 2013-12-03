@@ -1,5 +1,8 @@
 class ChallengesController < ApplicationController
+  before_action :set_challenges
 
+
+  
   def index
     @challenges = Challenge.all
   end
@@ -42,6 +45,10 @@ class ChallengesController < ApplicationController
   end
 
   private
+
+  def set_challenges
+      @popular_challenges = Challenge.last(5)
+  end  
 
   def challenge_params
     params.require(:challenge).permit(:difficulty, :name)
