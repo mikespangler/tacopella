@@ -1,5 +1,5 @@
 class ChallengeMailer < ActionMailer::Base
-  default from: "thetaco@tacopella.herokuapp.com"
+  default from: "tacopella.app@gmail.com"
 
   def invite_friends(sender, receivers, challenge)
     @challenge = challenge
