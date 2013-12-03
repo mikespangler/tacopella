@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+  <script src="application.js"></script>
   <title>Tacopella</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="apiswf"></div>
+  <dl>
+    <dt>playState</dt>
+    <dd id="playState"></dd>
+    <dt>track</dt>
+    <dd id="track"></dd>
+    <dt>album</dt>
+    <dd id="album"></dd>
+    <dt>artist</dt>
+    <dd id="artist"></dd>
+    <dt>art</dt>
+    <dd><img src="" id="art"></dd>
+    <dt>position</dt>
+    <dd id="position"></dd>
+  </dl>
+  <input id="play_key" value="t7088579"><button id="play">Play</button><br>
+  <button id="stop">Stop</button>
+  <button id="pause">Pause</button>
+  <button id="previous">Previous</button>
+  <button id="next">Next</button>
 
 <%= yield %>
 
