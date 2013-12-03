@@ -16,9 +16,10 @@ class ChallengesController < ApplicationController
 
   def create 
     @challenge = Challenge.create(challenge_params)
-    params[:song].each {|song| @challenge.songs.build(:name => song)}
+    # params[:song].each {|song| @challenge.songs.build(:name => song)}
     @challenge.save
-    redirect_to invite_friends_path(@challenge)
+    render 'add_songs'
+    # redirect_to invite_friends_path(@challenge)
   end
 
   def welcome
@@ -33,7 +34,11 @@ class ChallengesController < ApplicationController
   # reminder to self: Create validations
   def invite_friends
     @challenge = Challenge.find(params[:id])
-    ChallengeMailer.invite_friends(params[:sender], params[:receivers], @challenge).deliver
+    receivers_arr = params[:receivers].gsub(" ", "").split(",")
+    receivers_arr.each do |receiver|
+      ChallengeMailer.invite_friends(params[:sender], receiver, @challenge).deliver
+    end
+    redirect_to challenges_path
   end
 
   private

@@ -1,8 +1,8 @@
-<%= form_tag @challenge do %>
+<%= form_tag "/challenges/invite-friends" do %>
 
-  <%= text_field_tag :sender, "Enter your email" %>
+  <%= text_field_tag :sender, "Enter your email" %><br>
 
-  <%= text_area_tag :content, "Your friends' emails, separated by commas. Ex: your@friend.com, other@friend.com", {cols: 50, rows: 3} %>
+  <%= text_area_tag :receivers, "Your friends' emails, separated by commas. Ex: your@friend.com, other@friend.com", {cols: 50, rows: 3} %><br>
 
   <%= hidden_field_tag :id, @challenge.id %>
 
