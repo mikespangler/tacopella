@@ -26,7 +26,23 @@
 
   <body>
 
-    <%= yield %>
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap">
+
+        <a class="left-off-canvas-togger"> <Menu></a>
+
+        <aside class="left-off-canvas-menu">
+          <ul>
+            <li><a href="#"> Challenges </a></li>
+            <li><a href="#"> Create </a></li> 
+            <li><a href="#"> Scoreboard </a></li>
+          </ul>
+        </aside>
+          <%= yield %>
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div>
     <%= javascript_include_tag "application" %>
+</div>
   </body>
 </html>
