@@ -51003,7 +51003,12 @@ Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:01:26 -0500
 Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:01:26 -0500
 
 
+<<<<<<< HEAD
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:01:26 -0500
+=======
+<<<<<<< HEAD
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 11:16:41 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 
 Started POST "/challenges" for 127.0.0.1 at 2013-12-03 15:02:09 -0500
@@ -51144,6 +51149,7 @@ Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15
 Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:02:10 -0500
 
 
+<<<<<<< HEAD
 Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:02:10 -0500
 
 
@@ -54037,6 +54043,27 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 17:37:0
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:37:08 -0500
+=======
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 11:20:31 -0500
+=======
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:01:26 -0500
+>>>>>>> 69fb85fb0a5d568d90db6aec3b8c849c8d612e0a
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-03 15:27:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChallengesController#welcome as HTML
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  Rendered challenges/welcome.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+Completed 200 OK in 438ms (Views: 393.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/singingtaco.png" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -54059,6 +54086,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -54319,6 +54347,237 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 17:38:1
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:38:19 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.4ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:27:59 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+Processing by ChallengesController#new as HTML
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5[0m
+  Rendered challenges/new.html.erb within layouts/application (22.3ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+Completed 200 OK in 51ms (Views: 41.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:17 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 15:28:27 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Something", "difficulty"=>"2"}, "commit"=>"Yehaw!"}
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Tue, 03 Dec 2013 20:28:27 UTC +00:00], ["difficulty", 2], ["name", "Something"], ["updated_at", Tue, 03 Dec 2013 20:28:27 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered challenges/add_songs.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 42ms (Views: 25.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 15:28:27 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 15:28:27 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 15:28:27 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 15:28:27 -0500
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 15:28:27 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -54341,6 +54600,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -54460,6 +54720,406 @@ Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:38:43 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (40.9ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 15:28:27 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:28:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20131203204133)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "users" already exists: CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddPlaylistToChallenge (20131203143117)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  CREATE TEMPORARY TABLE "achallenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "difficulty" integer, "created_at" datetime, "updated_at" datetime, "playlist_key" text) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "challenges"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (1, 'blueberry', NULL, NULL, '2013-12-02 21:17:03.125525', '2013-12-02 21:17:03.125525', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (2, 'blueberry', NULL, NULL, '2013-12-02 21:22:12.000562', '2013-12-02 21:22:12.000562', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (3, 'whatever', NULL, NULL, '2013-12-02 21:34:14.203308', '2013-12-02 21:34:14.203308', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (4, 'blah', NULL, NULL, '2013-12-02 22:44:07.178089', '2013-12-02 22:44:07.178089', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (5, 'whatever', NULL, NULL, '2013-12-02 22:48:17.122494', '2013-12-02 22:48:17.122494', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (6, 'britney songs', NULL, 3, '2013-12-02 22:54:29.044501', '2013-12-02 22:54:29.044501', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (7, 'Shostakovich string quartets', NULL, 3, '2013-12-03 01:54:15.898344', '2013-12-03 01:54:15.898344', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (8, 'Shostakovich string quartets', NULL, 3, '2013-12-03 01:54:19.265611', '2013-12-03 01:54:19.265611', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (9, 'Shostakovich string quartets', NULL, 2, '2013-12-03 02:45:07.013136', '2013-12-03 02:45:07.013136', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (10, '', NULL, 1, '2013-12-03 14:49:12.246204', '2013-12-03 14:49:12.246204', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (11, '', NULL, 1, '2013-12-03 14:49:18.342516', '2013-12-03 14:49:18.342516', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (12, 'Chubby Checker Twist List', NULL, 1, '2013-12-03 16:15:58.781975', '2013-12-03 16:15:58.781975', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (13, 'Chubby Checker Twist List', NULL, 1, '2013-12-03 16:16:21.337155', '2013-12-03 16:16:21.337155', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (14, 'Chubby Checker Twist List', NULL, 1, '2013-12-03 16:16:41.326069', '2013-12-03 16:16:41.326069', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (15, 'Chubby Checker Twist List', NULL, 1, '2013-12-03 16:20:31.068073', '2013-12-03 16:20:31.068073', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "achallenges" ("id","name","user_id","difficulty","created_at","updated_at","playlist_key") VALUES (16, 'Something', NULL, 2, '2013-12-03 20:28:27.779845', '2013-12-03 20:28:27.779845', NULL)[0m
+  [1m[35m (0.9ms)[0m  DROP TABLE "challenges"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "challenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "user_id" integer, "difficulty" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "achallenges"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (1, 'blueberry', NULL, NULL, '2013-12-02 21:17:03.125525', '2013-12-02 21:17:03.125525')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (2, 'blueberry', NULL, NULL, '2013-12-02 21:22:12.000562', '2013-12-02 21:22:12.000562')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (3, 'whatever', NULL, NULL, '2013-12-02 21:34:14.203308', '2013-12-02 21:34:14.203308')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (4, 'blah', NULL, NULL, '2013-12-02 22:44:07.178089', '2013-12-02 22:44:07.178089')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (5, 'whatever', NULL, NULL, '2013-12-02 22:48:17.122494', '2013-12-02 22:48:17.122494')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (6, 'britney songs', NULL, 3, '2013-12-02 22:54:29.044501', '2013-12-02 22:54:29.044501')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (7, 'Shostakovich string quartets', NULL, 3, '2013-12-03 01:54:15.898344', '2013-12-03 01:54:15.898344')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (8, 'Shostakovich string quartets', NULL, 3, '2013-12-03 01:54:19.265611', '2013-12-03 01:54:19.265611')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (9, 'Shostakovich string quartets', NULL, 2, '2013-12-03 02:45:07.013136', '2013-12-03 02:45:07.013136')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (10, '', NULL, 1, '2013-12-03 14:49:12.246204', '2013-12-03 14:49:12.246204')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (11, '', NULL, 1, '2013-12-03 14:49:18.342516', '2013-12-03 14:49:18.342516')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (12, 'Chubby Checker Twist List', NULL, 1, '2013-12-03 16:15:58.781975', '2013-12-03 16:15:58.781975')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (13, 'Chubby Checker Twist List', NULL, 1, '2013-12-03 16:16:21.337155', '2013-12-03 16:16:21.337155')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (14, 'Chubby Checker Twist List', NULL, 1, '2013-12-03 16:16:41.326069', '2013-12-03 16:16:41.326069')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (15, 'Chubby Checker Twist List', NULL, 1, '2013-12-03 16:20:31.068073', '2013-12-03 16:20:31.068073')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "challenges" ("id","name","user_id","difficulty","created_at","updated_at") VALUES (16, 'Something', NULL, 2, '2013-12-03 20:28:27.779845', '2013-12-03 20:28:27.779845')
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "achallenges"[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20131203143117'
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddPlayKeyToSongs (20131203141927)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  CREATE TEMPORARY TABLE "asongs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "challenge_id" integer, "created_at" datetime, "updated_at" datetime, "play_key" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "songs"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (1, 'hit me baby one more time', 2, '2013-12-02 21:22:12.002653', '2013-12-02 21:22:12.002653', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (2, 'runaway', 3, '2013-12-02 21:34:14.237181', '2013-12-02 21:34:14.237181', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (3, 'a thing', 4, '2013-12-02 22:44:07.181574', '2013-12-02 22:44:07.181574', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (4, 'whatever', 4, '2013-12-02 22:44:07.183964', '2013-12-02 22:44:07.183964', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (5, 'something else', 4, '2013-12-02 22:44:07.184760', '2013-12-02 22:44:07.184760', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (6, 'stuff', 5, '2013-12-02 22:48:17.124689', '2013-12-02 22:48:17.124689', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (7, 'hit me baby', 6, '2013-12-02 22:54:29.057899', '2013-12-02 22:54:29.057899', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (8, 'dear diary', 6, '2013-12-02 22:54:29.061232', '2013-12-02 22:54:29.061232', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (9, 'toxic', 6, '2013-12-02 22:54:29.062465', '2013-12-02 22:54:29.062465', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (10, 'no.8 mvmt 2', 7, '2013-12-03 01:54:16.087635', '2013-12-03 01:54:16.087635', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (11, 'no.8 mvmt 2', 8, '2013-12-03 01:54:19.270100', '2013-12-03 01:54:19.270100', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "asongs" ("id","name","challenge_id","created_at","updated_at","play_key") VALUES (12, 'no.8 mvmt 2', 9, '2013-12-03 02:45:07.504720', '2013-12-03 02:45:07.504720', NULL)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "songs"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "challenge_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "asongs"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (1, 'hit me baby one more time', 2, '2013-12-02 21:22:12.002653', '2013-12-02 21:22:12.002653')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (2, 'runaway', 3, '2013-12-02 21:34:14.237181', '2013-12-02 21:34:14.237181')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (3, 'a thing', 4, '2013-12-02 22:44:07.181574', '2013-12-02 22:44:07.181574')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (4, 'whatever', 4, '2013-12-02 22:44:07.183964', '2013-12-02 22:44:07.183964')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (5, 'something else', 4, '2013-12-02 22:44:07.184760', '2013-12-02 22:44:07.184760')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (6, 'stuff', 5, '2013-12-02 22:48:17.124689', '2013-12-02 22:48:17.124689')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (7, 'hit me baby', 6, '2013-12-02 22:54:29.057899', '2013-12-02 22:54:29.057899')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (8, 'dear diary', 6, '2013-12-02 22:54:29.061232', '2013-12-02 22:54:29.061232')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (9, 'toxic', 6, '2013-12-02 22:54:29.062465', '2013-12-02 22:54:29.062465')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (10, 'no.8 mvmt 2', 7, '2013-12-03 01:54:16.087635', '2013-12-03 01:54:16.087635')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (11, 'no.8 mvmt 2', 8, '2013-12-03 01:54:19.270100', '2013-12-03 01:54:19.270100')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "songs" ("id","name","challenge_id","created_at","updated_at") VALUES (12, 'no.8 mvmt 2', 9, '2013-12-03 02:45:07.504720', '2013-12-03 02:45:07.504720')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "asongs"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20131203141927'
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddPlayKeyToSongs (20131203141927)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "songs" ADD "play_key" varchar(255)[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131203141927"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to AddPlaylistToChallenge (20131203143117)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "challenges" ADD "playlist_key" text[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131203143117"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20131203204133)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "users" already exists: CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateChallenges (20131202202903)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "challenges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "difficulty" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131202202903"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSongs (20131202204859)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "challenge_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131202204859"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Migrating to AddPlayKeyToSongs (20131203141927)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "songs" ADD "play_key" varchar(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131203141927"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to AddPlaylistToChallenge (20131203143117)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "challenges" ADD "playlist_key" text[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131203143117"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20131203204133)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131203204133"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-03 15:51:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+NoMethodError - undefined method `new' for Rdio:Module:
+  rack (1.5.2) lib/rack/builder.rb:86:in `block in use'
+  rack (1.5.2) lib/rack/builder.rb:134:in `block in to_app'
+  rack (1.5.2) lib/rack/builder.rb:134:in `to_app'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__1616252141245044300__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70096585968340/variables" for 127.0.0.1 at 2013-12-03 15:51:47 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-03 15:52:46 -0500
+
+NoMethodError - undefined method `new' for Rdio:Module:
+  rack (1.5.2) lib/rack/builder.rb:86:in `block in use'
+  rack (1.5.2) lib/rack/builder.rb:134:in `block in to_app'
+  rack (1.5.2) lib/rack/builder.rb:134:in `to_app'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__1616252141245044300__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70096579955360/variables" for 127.0.0.1 at 2013-12-03 15:52:47 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-03 15:52:48 -0500
+
+NoMethodError - undefined method `new' for Rdio:Module:
+  rack (1.5.2) lib/rack/builder.rb:86:in `block in use'
+  rack (1.5.2) lib/rack/builder.rb:134:in `block in to_app'
+  rack (1.5.2) lib/rack/builder.rb:134:in `to_app'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__1616252141245044300__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70096586916680/variables" for 127.0.0.1 at 2013-12-03 15:52:48 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-03 15:54:55 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChallengesController#welcome as HTML
+  [1m[35mChallenge Load (0.7ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  Rendered challenges/welcome.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 574ms (Views: 535.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -54482,6 +55142,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -54604,6 +55265,152 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 17:38:5
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:38:52 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.9ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (59.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/singingtaco.png" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:54:56 -0500
+
+
+Started GET "/auth/rdio" for 127.0.0.1 at 2013-12-03 15:55:00 -0500
+
+
+Started GET "/auth/rdio" for 127.0.0.1 at 2013-12-03 15:55:01 -0500
+
+
+Started GET "/auth/rdio/callback?oauth_verifier=2041&oauth_token=yxgxvv4t2rmmcxwu3ksukadz" for 127.0.0.1 at 2013-12-03 15:55:07 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_verifier"=>"2041", "oauth_token"=>"yxgxvv4t2rmmcxwu3ksukadz", "provider"=>"rdio"}
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 10[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'rdio' AND "users"."uid" = 's16661379' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "users" ("created_at", "name", "provider", "uid", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 03 Dec 2013 20:55:08 UTC +00:00], ["name", "Mike Spangler"], ["provider", "rdio"], ["uid", "s16661379"], ["updated_at", Tue, 03 Dec 2013 20:55:08 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-03 15:55:08 -0500
+Processing by ChallengesController#welcome as HTML
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  Rendered challenges/welcome.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 62ms (Views: 59.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 15:55:08 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -54626,6 +55433,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -54742,6 +55550,43 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 17:39:1
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:39:14 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (36.5ms)
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-03 15:55:15 -0500
+Processing by ChallengesController#new as HTML
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  Rendered challenges/new.html.erb within layouts/application (26.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 54ms (Views: 44.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 15:55:28 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Fuck Oauth, Let's Dance!", "difficulty"=>"3"}, "commit"=>"Yehaw!"}
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Tue, 03 Dec 2013 20:55:29 UTC +00:00], ["difficulty", 3], ["name", "Fuck Oauth, Let's Dance!"], ["updated_at", Tue, 03 Dec 2013 20:55:29 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered challenges/add_songs.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 74ms (Views: 63.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 15:55:29 -0500
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -54764,6 +55609,57 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (44.8ms)
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Fuck Oauth, Let's Dance!", "difficulty"=>"3"}, "commit"=>"Yehaw!"}
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 03 Dec 2013 20:55:49 UTC +00:00], ["difficulty", 3], ["name", "Fuck Oauth, Let's Dance!"], ["updated_at", Tue, 03 Dec 2013 20:55:49 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered challenges/add_songs.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 18.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -54880,6 +55776,137 @@ Completed 200 OK in 266ms (Views: 264.3ms | ActiveRecord: 0.4ms)
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:40:08 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.1ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:49 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Something", "difficulty"=>"2"}, "commit"=>"Yehaw!"}
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Tue, 03 Dec 2013 20:55:51 UTC +00:00], ["difficulty", 2], ["name", "Something"], ["updated_at", Tue, 03 Dec 2013 20:55:51 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered challenges/add_songs.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 27ms (Views: 19.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -54902,6 +55929,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -55030,6 +56058,146 @@ Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 17:40:38 
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:40:38 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:55:51 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 15:56:28 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Fuck Oauth, Let's Dance!", "difficulty"=>"3"}, "commit"=>"Yehaw!"}
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 03 Dec 2013 20:56:28 UTC +00:00], ["difficulty", 3], ["name", "Fuck Oauth, Let's Dance!"], ["updated_at", Tue, 03 Dec 2013 20:56:28 UTC +00:00]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered challenges/add_songs.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 149ms (Views: 139.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -55052,6 +56220,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -55162,6 +56331,128 @@ Completed 200 OK in 86ms (Views: 84.0ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:40:50 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (67.3ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:56:29 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Fuck Oauth, Let's Dance!", "difficulty"=>"3"}, "commit"=>"Yehaw!"}
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Tue, 03 Dec 2013 20:57:40 UTC +00:00], ["difficulty", 3], ["name", "Fuck Oauth, Let's Dance!"], ["updated_at", Tue, 03 Dec 2013 20:57:40 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered challenges/add_songs.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 120ms (Views: 109.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -55184,6 +56475,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -55306,6 +56598,137 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 17:41:0
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:41:01 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (87.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:40 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:57:41 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 15:59:51 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Fuck Oauth, Let's Dance!", "difficulty"=>"3"}, "commit"=>"Yehaw!"}
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 03 Dec 2013 20:59:51 UTC +00:00], ["difficulty", 3], ["name", "Fuck Oauth, Let's Dance!"], ["updated_at", Tue, 03 Dec 2013 20:59:51 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered challenges/add_songs.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 113ms (Views: 103.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 15:59:51 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -55328,6 +56751,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -55444,6 +56868,137 @@ Completed 200 OK in 193ms (Views: 190.5ms | ActiveRecord: 0.3ms)
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:45:59 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (52.5ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 15:59:51 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 15:59:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 15:59:52 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 16:00:00 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Something", "difficulty"=>"2"}, "commit"=>"Yehaw!"}
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Tue, 03 Dec 2013 21:00:00 UTC +00:00], ["difficulty", 2], ["name", "Something"], ["updated_at", Tue, 03 Dec 2013 21:00:00 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered challenges/add_songs.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 36ms (Views: 27.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 16:00:00 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -55466,6 +57021,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -55585,6 +57141,146 @@ Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:46:22 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:01 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Fuck Oauth, Let's Dance!", "difficulty"=>"3"}, "commit"=>"Yehaw!"}
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 03 Dec 2013 21:00:52 UTC +00:00], ["difficulty", 3], ["name", "Fuck Oauth, Let's Dance!"], ["updated_at", Tue, 03 Dec 2013 21:00:52 UTC +00:00]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered challenges/add_songs.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 122ms (Views: 113.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -55607,6 +57303,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -55726,6 +57423,140 @@ Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:46:49 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (59.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:52 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:53 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Something", "difficulty"=>"2"}, "commit"=>"Yehaw!"}
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Tue, 03 Dec 2013 21:00:55 UTC +00:00], ["difficulty", 2], ["name", "Something"], ["updated_at", Tue, 03 Dec 2013 21:00:55 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered challenges/add_songs.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 78ms (Views: 68.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -55748,6 +57579,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -55867,6 +57699,140 @@ Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 17:47:28 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:55 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:56 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 16:00:56 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 16:01:35 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Fuck Oauth, Let's Dance!", "difficulty"=>"3"}, "commit"=>"Yehaw!"}
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 03 Dec 2013 21:01:35 UTC +00:00], ["difficulty", 3], ["name", "Fuck Oauth, Let's Dance!"], ["updated_at", Tue, 03 Dec 2013 21:01:35 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered challenges/add_songs.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 155ms (Views: 146.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:35 -0500
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 16:01:35 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -55889,6 +57855,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -56008,6 +57975,140 @@ Completed 200 OK in 223ms (Views: 220.8ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 18:06:50 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.9ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:35 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:35 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:35 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:35 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:35 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:35 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:35 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:36 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Something", "difficulty"=>"2"}, "commit"=>"Yehaw!"}
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Tue, 03 Dec 2013 21:01:37 UTC +00:00], ["difficulty", 2], ["name", "Something"], ["updated_at", Tue, 03 Dec 2013 21:01:37 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered challenges/add_songs.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 28ms (Views: 19.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -56030,6 +58131,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -56149,6 +58251,132 @@ Completed 200 OK in 147ms (Views: 144.2ms | ActiveRecord: 0.3ms)
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 18:09:55 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (31.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:37 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 16:01:38 -0500
+
+
+Started GET "/challenges" for 127.0.0.1 at 2013-12-03 16:06:16 -0500
+Processing by ChallengesController#index as HTML
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5[0m
+  [1m[35mChallenge Load (0.4ms)[0m  SELECT "challenges".* FROM "challenges"
+  Rendered challenges/index.html.erb within layouts/application (5.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (1.5ms)
+Completed 200 OK in 166ms (Views: 162.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 16:06:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 16:06:17 -0500
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 16:06:17 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -56171,6 +58399,7 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -56302,6 +58531,67 @@ Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-
 
 
 Started GET "/application.js" for 127.0.0.1 at 2013-12-03 18:12:32 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (59.0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 16:06:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 16:06:17 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 16:06:17 -0500
+
+
+Started GET "/challenges/new" for 127.0.0.1 at 2013-12-03 16:06:32 -0500
+Processing by ChallengesController#new as HTML
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  Rendered challenges/new.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 66ms (Views: 63.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 16:06:32 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 16:06:32 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 16:06:32 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 16:06:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 16:06:32 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 16:06:41 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Square Dances", "difficulty"=>"1"}, "commit"=>"Yehaw!"}
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Tue, 03 Dec 2013 21:06:41 UTC +00:00], ["difficulty", 1], ["name", "Square Dances"], ["updated_at", Tue, 03 Dec 2013 21:06:41 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered challenges/add_songs.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 31ms (Views: 21.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 16:06:41 -0500
 
 ActionController::RoutingError (No route matches [GET] "/application.js"):
   actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -56324,6 +58614,72 @@ ActionController::RoutingError (No route matches [GET] "/application.js"):
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (53.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 16:06:41 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 16:06:41 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 16:06:41 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 16:06:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 16:06:41 -0500
+
+
+Started POST "/challenges" for 127.0.0.1 at 2013-12-03 16:08:00 -0500
+Processing by ChallengesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6sReM7wi3OdpSKT1xLQ6Nu0ixgUcCmFs4KhPlKL8HDw=", "challenge"=>{"name"=>"Square Dances", "difficulty"=>"1"}, "commit"=>"Yehaw!"}
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT "challenges".* FROM "challenges" ORDER BY "challenges"."id" DESC LIMIT 5[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "challenges" ("created_at", "difficulty", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 03 Dec 2013 21:08:00 UTC +00:00], ["difficulty", 1], ["name", "Square Dances"], ["updated_at", Tue, 03 Dec 2013 21:08:00 UTC +00:00]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered challenges/add_songs.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 158ms (Views: 149.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/application.js" for 127.0.0.1 at 2013-12-03 16:08:00 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
+
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
   /Users/tiffanypeon/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
@@ -56420,3 +58776,116 @@ Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 18:12:32 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 18:12:32 -0500
+=======
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/mikespangler/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/mikespangler/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (67.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/challenges.css?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation.css?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/rdio.css?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/songs.css?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/vendor/modernizr.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/challenges.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/songs.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/rdio.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-12-03 16:08:01 -0500
+>>>>>>> 5b8efff4d849b1ded1e511c1df68f5d45096154f
