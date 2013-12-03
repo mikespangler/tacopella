@@ -22,6 +22,7 @@ class ChallengesController < ApplicationController
   end
 
   def welcome
+    @challenges = Challenge.all
   end
 
   def invite_friends_form

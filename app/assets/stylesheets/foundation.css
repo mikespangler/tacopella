@@ -30,9 +30,14 @@ html,
 body {
   font-size: 100%; }
 
-body {
-  background: white;
-  color: #222222;
+html {
+  background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #FAD628 0%, #F4951D 100%);
+  background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #FAD628 0%, #F4951D 100%);
+  background-image: -o-radial-gradient(center top, ellipse farthest-corner, #FAD628 0%, #F4951D 100%);
+  background-image: -webkit-gradient(radial, center top, 0, center top, 553, color-stop(0, #FAD628), color-stop(1, #F4951D));
+  background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #FAD628 0%, #F4951D 100%);
+  background-image: radial-gradient(ellipse farthest-corner at center top, #FAD628 0%, #F4951D 100%);
+  min-height: 100%;
   padding: 0;
   margin: 0;
   font-family: "Loved by the King", "Helvetica", Helvetica, Arial, sans-serif;
@@ -1576,8 +1581,8 @@ meta.foundation-mq-topbar {
     color: white;
     padding: 12px 0 12px 0;
     padding-left: 15px;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 0.8125rem;
+    font-family: "Loved by the King", sans-serif;
+    font-size: 0.9525rem;
     font-weight: normal;
     background: #333333; }
     .top-bar-section ul li > a.button {
@@ -2758,7 +2763,7 @@ dl {
   line-height: 1.6;
   margin-bottom: 1.25rem;
   list-style-position: outside;
-  font-family: inherit; }
+  font-family: "Loved by the King", san-serif; }
 
 ul {
   margin-left: 1.1rem; }
