@@ -54,11 +54,16 @@ callback_object.ready = function ready(user) {
     event.preventDefault();
     var search;
     search = $(this).parent().children()[0].name
-    post_path = "http://api.rdio.com/1//?method=search";
+    post_path = "http://api.rdio.com/1/";
     data = {query: search, types: ['Album','Artist','Song']};
     clicked_button = $(this);
 
-    $.post(post_path, data, function() {
+    $.ajax({
+      url: post_path,
+      type: 'POST',
+      jsonp: true,
+      crossDomain: true,
+      data: data
     });
   });
 
@@ -82,28 +87,6 @@ callback_object.playingTrackChanged = function playingTrackChanged(playingTrack,
     $('#art').attr('src', playingTrack['icon']);
   }
 }
-
-// Attach a submit handler to the form
-$( "#searchForm" ).submit(function( event ) {
- 
-  // Stop form from submitting normally
-  event.preventDefault();
- 
-  // Get some values from elements on the page:
-  var $form = $( this ),
-    term = $form.find( "input[name='s']" ).val(),
-    url = $form.attr( "action" );
- 
-  // Send the data using post
-  var posting = $.post( url, { s: term } );
- 
-  // Put the results in a div
-  posting.done(function( data ) {
-    var content = $( data ).find( "#content" );
-    $( "#result" ).empty().append( content );
-  });
-});
-
 
 callback_object.playingSourceChanged = function playingSourceChanged(playingSource) {
   // The currently playing source changed.

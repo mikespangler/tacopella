@@ -1,19 +1,20 @@
 Tacopella::Application.routes.draw do
   resources :songs
-
   resources :challenges
+
+    root 'challenges#welcome'
+
     get 'challenges/:id/invite-friends' => 'challenges#invite_friends_form', :as => :invite_friends
     post 'challenges/invite-friends' => 'challenges#invite_friends'
-
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
     get 'challenges/add_songs' => 'challenges#add_songs', :as => :add_songs
+    
+
   # You can have the root of your site routed with "root"
-   root 'challenges#welcome'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
