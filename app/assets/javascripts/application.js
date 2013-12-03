@@ -16,10 +16,5 @@
 //= require turbolinks
 //= require_tree .
 
-<<<<<<< HEAD
 $(function(){ $(document).foundation(); });
 
-=======
-
-$(function(){ $(document).foundation(); });
->>>>>>> 3c1676e0ea90dc882583f0978c15288d18816cfa

@@ -25,18 +25,27 @@
     <%= csrf_meta_tags %>
   </head>
 <!-- <div id="apiswf"></div> -->
-<%= form_for(@challenge) do |f| %> 
-  <label>Challenge Name</label>
-  <%= f.text_field :name %>
-    <label>Select Your Difficulty</label>
-    <%= f.select(:difficulty, options_for_select([['Easy as pie', 1], ['Medium', 2], ['Hard as Sh*t', 3]])) %> 
-    <!-- label>Search for Songs</label>
-      <fieldset id="songs">
-      <div id="search_songs">   
-        <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> 
-        <button id="submit_song_search">SEARCH</button>
-      </div>
-    </fieldset>  -->
-<!--     <button id="search_song">I'M DONE</button> -->
-  <%= f.submit %> 
-<% end %> 
+<br><br>
+<div class="row">
+  <div class="large-4 columns">
+    <h3 style="font-family: Arbutus"> Hold yer' Horses! </h3><br> 
+    <h3> Settle down little doggie! First give yer' challenge a name and select just how hard you want 'ta make it. Then I'll let you pick yer songs! </h3>  
+  </div> 
+  <div class="large-8 columns"> 
+  <%= form_for(@challenge) do |f| %> 
+    <label class="label">Challenge Name</label>
+    <%= f.text_field :name %>
+      <label>Select Your Difficulty</label>
+      <%= f.select(:difficulty, options_for_select([['Easy as cherry pie', 1], ['Medium', 2], ['Hard as all Heck!', 3]])) %> 
+      <!-- label>Search for Songs</label>
+        <fieldset id="songs">
+        <div id="search_songs">   
+          <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> 
+          <button id="submit_song_search">SEARCH</button>
+        </div>
+      </fieldset>  -->
+  <!--     <button id="search_song">I'M DONE</button> -->
+    <%= f.submit %> 
+  <% end %> 
+</div>
+</div> 

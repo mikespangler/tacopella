@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   private
 
   def set_challenges
-      @popular_challenges = Challenge.last(5)
+    @popular_challenges = Challenge.last(10)
   end  
 
 end

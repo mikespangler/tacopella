@@ -1605,7 +1605,7 @@ meta.foundation-mq-topbar {
       .top-bar-section ul li > a.button.alert:hover {
         background: #d47b0a; }
   .top-bar-section ul li:hover > a {
-    background: #272727;
+    background: #14b9b3;
     color: white; }
   .top-bar-section ul li.active > a {
     background: #14b9b3;
@@ -3570,7 +3570,7 @@ blockquote p {
       right: auto; } }
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Arbutus", "Helvetica", Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
