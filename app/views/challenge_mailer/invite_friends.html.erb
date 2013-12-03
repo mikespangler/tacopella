@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to Tacopella</h1>
+    <%= @sender %> has sent you a song challenge. Click below to take it on!
+    <br>
+    <%= challenge_url(@challenge, only_path: false) %>
+  </body>
+</html>
