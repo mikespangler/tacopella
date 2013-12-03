@@ -23,9 +23,12 @@ class ChallengesController < ApplicationController
   def welcome
   end
 
-  # POST /challenges/invite-friends.json
-  # challenge id will be parsed in json
-  # Note: MUST create validations front (JS) and back=end (where?)
+  def invite_friends_form
+    @challenge = Challenge.find(params[:id])
+  end
+
+  # POST /challenges/invite-friends
+  # reminder to self: Create validations
   def invite_friends
     @challenge = Challenge.find(params[:id])
     ChallengeMailer.invite_friends(params[:sender], params[:receivers], @challenge).deliver
