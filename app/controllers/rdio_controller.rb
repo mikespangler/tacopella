@@ -1,0 +1,2 @@
+class RdioController < ApplicationController
+end

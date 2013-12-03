@@ -16,4 +16,7 @@
 //= require turbolinks
 //= require_tree .
 
+<<<<<<< HEAD
 $(function(){ $(document).foundation(); });
+=======
+>>>>>>> origin/rdio

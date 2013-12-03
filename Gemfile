@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Rdio Playback
+gem 'rdio'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
@@ -31,7 +33,7 @@ gem 'better_errors'
 gem 'binding_of_caller'
 
 gem 'foundation-rails'
-
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
