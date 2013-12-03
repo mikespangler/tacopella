@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-  <script src="application.js"></script>
-  <title>Tacopella</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div id="apiswf"></div>
-  <dl>
-    <dt>playState</dt>
-    <dd id="playState"></dd>
-    <dt>track</dt>
-    <dd id="track"></dd>
-    <dt>album</dt>
-    <dd id="album"></dd>
-    <dt>artist</dt>
-    <dd id="artist"></dd>
-    <dt>art</dt>
-    <dd><img src="" id="art"></dd>
-    <dt>position</dt>
-    <dd id="position"></dd>
-  </dl>
-  <input id="play_key" value="t7088579"><button id="play">Play</button><br>
-  <button id="stop">Stop</button>
-  <button id="pause">Pause</button>
-  <button id="previous">Previous</button>
-  <button id="next">Next</button>
+<html lang="en">
+  <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+   <script src="application.js"></script>
+   <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Arbutus::latin', 'Loved+by+the+King::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<%= yield %>
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap">
+
+        <a class="left-off-canvas-togger"> <Menu></a>
+
+        <aside class="left-off-canvas-menu">
+          <ul>
+            <li><a href="#"> Challenges </a></li>
+            <li><a href="#"> Create </a></li> 
+            <li><a href="#"> Scoreboard </a></li>
+          </ul>
+        </aside>
+          <%= yield %>
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div>
+    <%= javascript_include_tag "application" %>
+</div>
 </body>
+
 </html>

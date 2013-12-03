@@ -5,6 +5,7 @@ class ChallengesController < ApplicationController
   end
 
   def show 
+    render :layout => false
     @challenge = Challenge.find(params[:id])
   end
 
