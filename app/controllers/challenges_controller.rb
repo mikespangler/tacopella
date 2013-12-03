@@ -16,9 +16,10 @@ class ChallengesController < ApplicationController
 
   def create 
     @challenge = Challenge.create(challenge_params)
-    params[:song].each {|song| @challenge.songs.build(:name => song)}
+    # params[:song].each {|song| @challenge.songs.build(:name => song)}
     @challenge.save
-    redirect_to invite_friends_path(@challenge)
+    render 'add_songs'
+    # redirect_to invite_friends_path(@challenge)
   end
 
   def welcome

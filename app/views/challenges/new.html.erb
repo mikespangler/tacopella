@@ -1,15 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+   <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Arbutus::latin', 'Loved+by+the+King::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+<!-- <div id="apiswf"></div> -->
 <%= form_for(@challenge) do |f| %> 
-
-<%= f.text_field :name %>
-<%= f.select(:difficulty, options_for_select([['Easy as pie', 1], ['Medium', 2], ['Hard as Sh*t', 3]])) %> 
-
-<label>Add songs</label>
-  <fieldset id="songs">
-  <div class="songs">   
-    <input type="text" name="song[]"%> <button class="remove">x</button>
-        
-    <button id="add_song">add songs</button>
+  <label>Challenge Name</label>
+  <%= f.text_field :name %>
+    <label>Select Your Difficulty</label>
+    <%= f.select(:difficulty, options_for_select([['Easy as pie', 1], ['Medium', 2], ['Hard as Sh*t', 3]])) %> 
+    <!-- label>Search for Songs</label>
+      <fieldset id="songs">
+      <div id="search_songs">   
+        <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> 
+        <button id="submit_song_search">SEARCH</button>
       </div>
-  </fieldset> 
-<%= f.submit %> 
+    </fieldset>  -->
+<!--     <button id="search_song">I'M DONE</button> -->
+  <%= f.submit %> 
 <% end %> 
