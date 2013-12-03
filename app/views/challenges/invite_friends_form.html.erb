@@ -1,0 +1,11 @@
+<%= form_tag @challenge do %>
+
+  <%= text_field_tag :sender, "Enter your email" %>
+
+  <%= text_area_tag :content, "Your friends' emails, separated by commas. Ex: your@friend.com, other@friend.com", {cols: 50, rows: 3} %>
+
+  <%= hidden_field_tag :id, @challenge.id %>
+
+  <%= submit_tag "Send" %>
+
+<% end %>
