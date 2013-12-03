@@ -31,7 +31,11 @@ class ChallengesController < ApplicationController
   # reminder to self: Create validations
   def invite_friends
     @challenge = Challenge.find(params[:id])
-    ChallengeMailer.invite_friends(params[:sender], params[:receivers], @challenge).deliver
+    receivers_arr = params[:receivers].gsub(" ", "").split(",")
+    receivers_arr.each do |receiver|
+      ChallengeMailer.invite_friends(params[:sender], receiver, @challenge).deliver
+    end
+    redirect_to challenges_path
   end
 
   private

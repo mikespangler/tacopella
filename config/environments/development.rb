@@ -19,8 +19,8 @@ Tacopella::Application.configure do
   config.action_mailer.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
-  domain:               'tacopella.herokuapp.com',
-  user_name:            'tacopella.app@gmail.com',
+  domain:               'localhost',
+  user_name:            'tacopella.app',
   password:             'tacopella55!!',
   authentication:       'plain',
   enable_starttls_auto: true  }
