@@ -1,16 +1,27 @@
-<div class="off-canvas-wrap">
-  <div class="inner-wrap">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1 id="taco-logo"><%= link_to "TACOPELLA", root_path %> </h1>
+    </li>
+  </ul>
 
-    <a class="left-off-canvas-togger"> <Menu></a>
+  <section class="top-bar-section" class="taco-body">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><%= link_to "Make a New Challenge", new_challenge_path %> </a></li>
+      <li class="has-dropdown">
+        <a href="#">Popular Challenges</a>
+        <ul class="dropdown">
+          <% @popular_challenges.each do |challenge| %> 
+          <li><%= link_to challenge.name, challenge_path(challenge) %></li>
+          <% end %> 
+        </ul>
+      </li>
+    </ul>
 
-    <aside class="left-off-canvas-menu">
-      <ul>
-        <li><a href="#"> Challenges </a></li>
-        <li><a href="#"> Create </a></li> 
-        <li><a href="#"> Scoreboard </a></li>
-      </ul>
-    </aside>
-
-    <a class="exit-off-canvas"></a>
-  </div>
-</div>
+    <!-- Left Nav Section -->
+<!--     <ul class="left">
+      <li><a href="#">Left Nav Button</a></li>
+    </ul> -->
+  </section>
+</nav>
