@@ -54,17 +54,18 @@ class ChallengesController < ApplicationController
   end
 
 
-
-
-
   private
+
+  def api
+    api = Rdio::Api.new('nwqk6482vnzn47ph332m5e6v', 'TxxUNrJC3v')
+  end
+
+  def user
+    api.currentUser
+  end
  
   def require_login
-    unless api
-      api = Rdio::Api.new('nwqk6482vnzn47ph332m5e6v', 'TxxUNrJC3v')
-    unless user
-      user = api.currentUser
-    end
+    api if !api
   end
 
   def set_challenges
@@ -74,5 +75,8 @@ class ChallengesController < ApplicationController
   def challenge_params
     params.require(:challenge).permit(:difficulty, :name)
   end
+
+  helper_method :api
+  helper_method :user
 
 end
