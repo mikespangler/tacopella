@@ -10,9 +10,9 @@ class RdioSearch
   def as_json(option = {})
     @search_results.map do |result|
       {
-        key: result.key,
-        name: result.name,
-        artist: result.artist_name,
+        :key => [result.name, result.key],
+        :name => result.name,
+        :artist => result.artist_name
       }
     end
   end
