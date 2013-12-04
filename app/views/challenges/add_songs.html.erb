@@ -1,4 +1,4 @@
-<%= form_for(@challenge) action: 'http://api.rdio.com/1/search' method: 'post' do |f| %> 
+<%= form_for(@song) method: do |f| %> 
   <label><%= @challenge.name%></label>
  
     <label>Search for Songs</label>
@@ -7,4 +7,5 @@
         <button id="submit_song_search">SEARCH</button>
       </div>
     <button id="search_song">I'M DONE</button>
+<% end %>
 
