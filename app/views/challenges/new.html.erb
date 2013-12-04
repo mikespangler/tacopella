@@ -37,14 +37,7 @@
     <%= f.text_field :name %>
       <h3><%= f.label :difficulty, "Select Your Difficulty", :class => "label" %> </h3>
       <h5> <%= f.select(:difficulty, options_for_select([["Easy as cherry pie on a summer's day", 1], ["Daddy didn't raise no fool, but I ain't no genius neither", 2], ['Hard as all Heck!', 3]])) %> </h5>
-      <!-- label>Search for Songs</label>
-        <fieldset id="songs">
-        <div id="search_songs">   
-          <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> 
-          <button id="submit_song_search">SEARCH</button>
-        </div>
-      </fieldset>  -->
-  <!--     <button id="search_song">I'M DONE</button> -->
+
     <%= f.submit "Yehaw!", :class => "button [small][radius round]" %> 
   <% end %> 
 </div>

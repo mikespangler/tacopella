@@ -1,23 +1,37 @@
-<%= form_tag(song_results_path, method: 'get') %> 
-  <label><%= @challenge.name%></label>
- 
-    <label>Search for Songs</label>
-      <div id="search_songs">  
-        <%= text_field_tag :search_song %>  
-        <!-- <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> --> 
-        <%= submit_tag %> 
-      </div>
+<!-- FOR AJAX MAGIC <form id="search_field"> -->
+<br><br> 
+  <!-- Playlist previewer or message -->
+  <div class="row">
+    <div id="preview" class="small-4 columns">
+      <h3>Your Challenge list:</h3>
+      <% if @challenge.songs.count == 0 %>
+          <h4> Well dang! It looks like you haven't added anything yet. You best git to searchin' right away! </h4>
+      <% else %>   
+          <ul>
+          <% @challenge.songs.each do |song| %> 
+            <li> <%= song.name %> </li> 
+          </ul> 
+        <% end %> 
+      <% end%>  
+    </div>
+    <div class="small-4 small-centered columns">
+      <%= form_tag(song_results_path, method: 'get') %> 
+        <h3 style="text-align: center">Select songs for: <%= @challenge.name%></p></h3>
 
+          <div id="search_songs"> 
+            <%= text_field_tag :search_song, nil, placeholder: "Search for song title & artist name", style: "text-align: center" %>  
+          <div style="text-align: center"> 
+            <%= submit_tag "Giddyup!", class: "button small radius" %> 
+          </div>
+          </div>
+    </div>
+    <div id="results_form" class="small-4 columns">
+      <% #render 'song_results' %> 
+    </div>
+  </div>
+  <!-- end search bar --> 
+  <!-- Results and playlist preview section-->
+    
+  </div>
+  <!-- end results and playlist --> 
 
-<!--   <%# if @challenge.songs > 0 %> 
-  <div> 
-    Songs in Challenge:  
-    <ul>
-      <%# @challenge.songs.each do |song| %> 
-      <li> 
-        <%#= song.name %> 
-      </li> 
-    </ul> 
-  <%# end %> 
-  <%# end%>  -->
-    <!-- <button id="search_song">I'M DONE</button> -->
