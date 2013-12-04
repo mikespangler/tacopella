@@ -1,12 +1,6 @@
-<%= form_for(@challenge) do |f| %> 
-  <select id="song_choice" name="song_choice"> 
-  <% n = 1 %>  
-  <% @rdio_search.search_results.each do |result| %> 
-  <option value= <%= n %> >
-  <%= result.name %> - <%= result.artist_name %> </option> <br>
-  <% n += 1 %> 
-  <% end %> 
-  </select>
-  <%= f.hidden_field :rdio_search, :value => @rdio_search %> 
+<%= form_for @challenge, id: "add_song" do |f| %> 
+  <% @rdio_search.search_results do |result| %> 
+    <input type="radio" name="song" value="<%= result.key %>" /><%= "#{result.artist_name} - #{result.name}" %><br>
+  <% end %>
   <%= f.submit "Add Song to Challenge" %> 
-<% end %> 
+<% end %>
