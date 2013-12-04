@@ -15,8 +15,8 @@ Tacopella::Application.routes.draw do
 
    #post 'challenges/:id/songs/search' => 'songs#create_search_results'
    get 'challenges/:id/songs/song_results' => 'songs#song_results', :as => :song_results 
-   post 'challenges/:id/songs/song_results' => 'challenges#update
-   '
+   post 'challenges/:id/songs/song_results' => 'challenges#update'
+   
    # get 'challenges/:id/songs/song_results/show' => 'song'
 
    # match "/auth/:provider/callback" => "sessions#create", via: [:get,:post]

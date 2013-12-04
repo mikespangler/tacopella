@@ -8,23 +8,21 @@ class RdioSearch
   end
 
   def as_json(option = {})
-    n= 1
     @search_results.map do |result|
       {
         key: result.key,
         name: result.name,
         artist: result.artist_name,
-        choice: result.index
       }
     end
   end
 
-  def self.find_by_choice(choice)
-    @search_results.map do |result| 
-      if choice == result.index
-        result
-      end
-    end
-  end
+  # def self.find_by_choice(choice)
+  #   @search_results.map do |result| 
+  #     if choice == result.index
+  #       result
+  #     end
+  #   end
+  # end
 
 end
