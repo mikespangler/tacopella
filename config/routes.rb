@@ -7,7 +7,7 @@ Tacopella::Application.routes.draw do
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-   get 'challenges/:id/add_songs' => 'challenges#add_songs', :as => :add_songs
+   post 'challenges/add_songs' => 'challenges#add_songs', :as => :add_songs
   # You can have the root of your site routed with "root"
    root 'challenges#welcome'
 

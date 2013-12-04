@@ -50,27 +50,6 @@ callback_object.ready = function ready(user) {
 
 }
 
-  $('#submit_song_search').click(function(e) {
-    e.preventDefault();
-    var search_song, post_path, datums, clicked_button, challenge_id;
-    challenge_id = $(this).parent().attr('name');
-    search_song = $(this).parent().parent().serialize();
-    get_path = "/challenges/" + challenge_id + "/songs/search_songs.json?" + search_song;
-    clicked_button = $(this);
-
-    console.log('sending search request...');
-
-    $.get(get_path, function(response){
-      $.each(response, function(index, val) {
-        $.each(val, function(k, v){
-          alert( k + ": " + v );
-          // Here we'd generate the form html and replace the contents of the "add to playlist" div. This form will allow user to select one song to add to its corresponding playlist. This will work via post request => create new song with the key (play_key) name (name) and challenge_id.
-        });
-      });
-    });
-  });
-
-
 callback_object.freeRemainingChanged = function freeRemainingChanged(remaining) {
   $('#remaining').text(remaining);
 }
