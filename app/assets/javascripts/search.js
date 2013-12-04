@@ -5,7 +5,7 @@ $(function(){
     var search_song, post_path, datums, clicked_button, challenge_id;
     challenge_id = $(this).parent().attr('name');
     search_song = $(this).parent().parent().serialize();
-    get_path = "/challenges/" + challenge_id + "/songs/search_songs.json?" + search_song;
+    get_path = "/challenges/" + challenge_id + "/songs/song_results?" + search_song;
     clicked_button = $(this);
 
     console.log('sending search request...');

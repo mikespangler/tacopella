@@ -14,9 +14,11 @@ Tacopella::Application.routes.draw do
    get 'challenges/:id/songs/search' => 'songs#search_songs', :as => :search_songs
 
    #post 'challenges/:id/songs/search' => 'songs#create_search_results'
-   # post 'challenges/:id/songs/song_results' => 'songs#song_results', :as => :song_results 
-   get 'challenges/:id/songs/search_songs' => 'songs#song_results', :as => :song_results 
+   get 'challenges/:id/songs/song_results' => 'songs#song_results', :as => :song_results 
+   post 'challenges/:id/songs/song_results' => 'challenges#update'
    
+   # get 'challenges/:id/songs/song_results/show' => 'song'
+
    # match "/auth/:provider/callback" => "sessions#create", via: [:get,:post]
    # match "/signout" => "sessions#destroy", :as => :signout, via: [:get,:post]
 

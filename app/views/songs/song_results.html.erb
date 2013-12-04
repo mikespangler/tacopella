@@ -1,6 +1,0 @@
-<%= form_for @challenge, id: "add_song" do |f| %> 
-  <% @rdio_search.search_results do |result| %> 
-    <input type="radio" name="song" value="<%= result.key %>" /><%= "#{result.artist_name} - #{result.name}" %><br>
-  <% end %>
-  <%= f.submit "Add Song to Challenge" %> 
-<% end %>

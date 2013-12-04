@@ -30,9 +30,6 @@ class SongsController < ApplicationController
     api = Rdio::Api.new('nwqk6482vnzn47ph332m5e6v', 'TxxUNrJC3v')
     @rdio_search = RdioSearch.new(api.search(params[:search_song],types='Song',never_or=nil,extras=nil,count=5))
     render :partial => 'songs/song_results', :format => 'text/html'
-    # respond_to do |f|
-    #   f.json {render :json => @rdio_search} 
-    # end  
   end
 
   private
