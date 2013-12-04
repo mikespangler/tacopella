@@ -54,17 +54,17 @@ callback_object.ready = function ready(user) {
     event.preventDefault();
     var search, post_path, datums, clicked_button;
     search = $(this).parent().children()[0].name
-    post_path = "http://api.rdio.com/1/";
-    datums = {query: search, types: ['Album','Artist','Song']};
+    post_path = "localhost/rdio_search";
+    datums = {query: search, types: 'Album,Artist,Song'};
     clicked_button = $(this);
 
     console.log('sending search request...');
     $.ajax({
       url: post_path,
-      type: 'POST',
+      type: 'post',
+      dataType: 'jsonp',
       data: datums,
       crossDomain: true,
-      jsonp: true,
       success: function(data) { console.log('hi'); }
     });
   });

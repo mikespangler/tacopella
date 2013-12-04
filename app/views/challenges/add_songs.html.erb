@@ -1,6 +1,7 @@
-
-  <h1><%= @challenge.name%></h1>
-    <h2>Add Songs to Your Challenge</h2>
+<%= form_for(@challenge) action: 'http://api.rdio.com/1/search' method: 'post' do |f| %> 
+  <label><%= @challenge.name%></label>
+ 
+    <label>Search for Songs</label>
       <div id="search_songs">   
         <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> 
         <button id="submit_song_search">SEARCH</button>
