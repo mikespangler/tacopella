@@ -11,8 +11,8 @@ Tacopella::Application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'challenges#welcome'
 
-   match "/auth/:provider/callback" => "sessions#create", via: [:get,:post]
-   match "/signout" => "sessions#destroy", :as => :signout, via: [:get,:post]
+   # match "/auth/:provider/callback" => "sessions#create", via: [:get,:post]
+   # match "/signout" => "sessions#destroy", :as => :signout, via: [:get,:post]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
