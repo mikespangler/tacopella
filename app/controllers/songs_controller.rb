@@ -12,7 +12,6 @@ class SongsController < ApplicationController
 
   def search_songs
     @challenge = Challenge.find(params[:id])
-    api.search(params[:search_song],types='Song',never_or=nil,extras=nil,count=5)
   end
 
   def add_songs
@@ -21,12 +20,17 @@ class SongsController < ApplicationController
 
   def create_search_results
     @challenge = Challenge.find(params[:id])
-    @results = api.search(params[:search_song],types='Song',never_or=nil,extras=nil,count=5)
-    redirect_to song_results_path
+    respond_to do |f|
+      f.json {render :json => api.search(params[:search_song],types='Song',never_or=nil,extras=nil,count=5)} 
+    end  
   end
 
   def song_results
-    @results = #whatever the api gives us 
+    @rdio_search = RdioSearch.new(api.search(params[:search_song],types='Song',never_or=nil,extras=nil,count=5))
+    respond_to do |f|
+      f.json {render :json => @rdio_search} 
+    end  
+    #@results = whatever the api gives us 
     #this is another form that lets you actually select the song and then sends you to create 
     #through create you'll add a song to the playlist 
     #then you'll go back to search songs and do it again until you're done making your playlist 

@@ -82746,3 +82746,10 @@ Processing by SongsController#song_results as */*
   [1m[35mChallenge Load (0.1ms)[0m  SELECT "challenges".* FROM "challenges" WHERE "challenges"."id" = ? LIMIT 1  [["id", "36"]]
 Redirected to http://localhost:3000/challenges/36/songs/song_results
 Completed 302 Found in 265ms (ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateResults (20131204145916)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "results" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131204145916"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
