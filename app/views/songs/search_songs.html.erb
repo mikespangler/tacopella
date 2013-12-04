@@ -1,4 +1,3 @@
-<!-- FOR AJAX MAGIC <form id="search_field"> -->
 <br><br> 
   <!-- Playlist previewer or message -->
   <div class="row">
@@ -15,13 +14,15 @@
       <% end%>  
     </div>
     <div class="small-4 small-centered columns">
-      <%= form_tag(song_results_path, method: 'get') %> 
+      <form id="search_field">
+      <%#= form_tag(song_results_path, method: 'get') %> 
         <h3 style="text-align: center">Select songs for: <%= @challenge.name%></p></h3>
 
-          <div id="search_songs"> 
+          <div id="search_songs" data-id="<%= @challenge.id %>"> 
             <%= text_field_tag :search_song, nil, placeholder: "Search for song title & artist name", style: "text-align: center" %>  
           <div style="text-align: center"> 
-            <%= submit_tag "Giddyup!", class: "button small radius" %> 
+            <%#= submit_tag "Giddyup!", class: "button small radius" %> 
+            <input name="commit" type="submit" id="submit_song_search" value="Search" />
           </div>
           </div>
     </div>
@@ -35,3 +36,16 @@
   </div>
   <!-- end results and playlist --> 
 
+=======
+<form id="search_field">
+  <label><%= @challenge.name%></label> 
+  <label>Search for Songs</label>
+  <div id="search_songs" data-id="<%= @challenge.id %>">  
+    <%= text_field_tag :search_song %>  
+    <input name="commit" type="submit" id="submit_song_search" value="Search" />
+  </div>
+</form><br>
+
+<div id="results_form"></div>
+<div id="preview"></div>
+>>>>>>> 8bfffdde4838139e056b7c5c1ccc9f9b6ad19e85

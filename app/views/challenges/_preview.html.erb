@@ -1,0 +1,38 @@
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+
+        <a class="left-off-canvas-togger"> <Menu></a>
+
+        <aside class="left-off-canvas-menu">
+          <ul>
+            <li><a href="#"> Challenges </a></li>
+            <li><a href="#"> Create </a></li> 
+            <li><a href="#"> Scoreboard </a></li>
+          </ul>
+        </aside>
+          <%= yield %>
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div>
+    <%= javascript_include_tag "application" %>
+</div>
+<div id="apiswf"></div>
+  <dl>
+    <dt>playState</dt>
+    <dd id="playState"></dd>
+    <dt>track</dt>
+    <dd id="track"></dd>
+    <dt>album</dt>
+    <dd id="album"></dd>
+    <dt>artist</dt>
+    <dd id="artist"></dd>
+    <dt>art</dt>
+    <dd><img src="" id="art"></dd>
+    <dt>position</dt>
+    <dd id="position"></dd>
+  </dl>
+  <input id="play_key" value="t7088579"><button id="play">Play</button><br>
+  <button id="stop">Stop</button>
+  <button id="pause">Pause</button>
+  <button id="previous">Previous</button>
+  <button id="next">Next</button>

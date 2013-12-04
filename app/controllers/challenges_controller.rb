@@ -1,7 +1,5 @@
 class ChallengesController < ApplicationController
   before_action :set_challenges
-
-
   
   def index
     @challenges = Challenge.all
@@ -27,9 +25,9 @@ class ChallengesController < ApplicationController
   def update
     raise params.inspect
     @challenge = Challenge.find(params[:id])
-    @song = @challenge.songs.build({:play_key => params[:key], :name => params[:challenge][:song_name]})
+    @song = @challenge.songs.build({:play_key => params[:key], :name => params[:song]})
     @song.save
-    redirect_to search_songs_path(@challenge)
+    render :partial => 'challenges/preview', :format => 'text/html'
   end
 
   def welcome
