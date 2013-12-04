@@ -26,7 +26,6 @@ class SongsController < ApplicationController
   end
 
   def song_results
-    binding.pry
     @rdio_search = RdioSearch.new(params[:search_song])
     respond_to do |f|
       f.json {render :json => @rdio_search} 

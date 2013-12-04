@@ -59,8 +59,14 @@ callback_object.ready = function ready(user) {
     clicked_button = $(this);
 
     console.log('sending search request...');
+
     $.get(get_path, function(response){
-      alert(response[0].name);
+      $.each(response, function(index, val) {
+        $.each(val, function(k, v){
+          alert( k + ": " + v );
+          // Here we'd generate the form html and replace the contents of the "add to playlist" div. This form will allow user to select one song to add to its corresponding playlist. This will work via post request => create new song with the key (play_key) name (name) and challenge_id.
+        });
+      });
     });
   });
 
