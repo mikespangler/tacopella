@@ -24,6 +24,13 @@ class ChallengesController < ApplicationController
     # redirect_to invite_friends_path(@challenge)
   end
 
+  def update
+    @challenge = Challenge.find(params[:id])
+    puts find_song_choice
+    #@song = @challenge.songs.build(song_params)
+    #redirect_to search_songs_path(@challenge)
+  end
+
   def welcome
     @challenges = Challenge.all
   end
@@ -52,5 +59,14 @@ class ChallengesController < ApplicationController
   def challenge_params
     params.require(:challenge).permit(:difficulty, :name)
   end
+
+  def find_song_choice
+    @song = RdioSearch.find_by_choice(params[:song_choice])
+  end
+
+  def song_params
+    @song
+  end
+
 
 end

@@ -1,6 +1,4 @@
 class RdioSearch
-  RDIO_KEY = 'nwqk6482vnzn47ph332m5e6v'
-  RDIO_SECRET = 'TxxUNrJC3v'
 
   attr_accessor :search_results, :results_hash
 
