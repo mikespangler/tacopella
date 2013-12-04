@@ -28,10 +28,9 @@ class SongsController < ApplicationController
   def song_results
     api = Rdio::Api.new('nwqk6482vnzn47ph332m5e6v', 'TxxUNrJC3v')
     @rdio_search = RdioSearch.new(api.search(params[:search_song],types='Song',never_or=nil,extras=nil,count=5))
-    respond_to do |f|
-      f.json {render :json => @rdio_search} 
-    end  
-    redirect_to show_path(@rdio_search)
+    # respond_to do |f|
+    #   f.json {render :json => @rdio_search} 
+    # end  
     #@results = whatever the api gives us 
     #this is another form that lets you actually select the song and then sends you to create 
     #through create you'll add a song to the playlist 
