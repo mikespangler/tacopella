@@ -52,22 +52,22 @@ callback_object.ready = function ready(user) {
 
   $('#submit_song_search').click(function() {
     event.preventDefault();
-    var search, post_path, datums, clicked_button;
-    search = $(this).parent().children()[0].name
-    post_path = "localhost/rdio_search";
-    datums = {query: search, types: 'Album,Artist,Song'};
+    var search_song, post_path, datums, clicked_button, challenge_id;
+    challenge_id = $(this).parent().attr('name');
+    search_song = $(this).parent().parent().serialize();
+    post_path = "/challenges/" + challenge_id + "/songs/search?" + search_song;
     clicked_button = $(this);
 
     console.log('sending search request...');
     $.ajax({
       url: post_path,
       type: 'post',
-      dataType: 'jsonp',
-      data: datums,
-      crossDomain: true,
+      // dataType: 'jsonp',
+      // crossDomain: true,
       success: function(data) { console.log('hi'); }
     });
   });
+
 
 callback_object.freeRemainingChanged = function freeRemainingChanged(remaining) {
   $('#remaining').text(remaining);

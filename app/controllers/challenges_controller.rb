@@ -8,7 +8,6 @@ class ChallengesController < ApplicationController
   end
 
   def show 
-    render :layout => false
     @challenge = Challenge.find(params[:id])
   end
 
@@ -21,7 +20,7 @@ class ChallengesController < ApplicationController
     @challenge = Challenge.create(challenge_params)
     # params[:song].each {|song| @challenge.songs.build(:name => song)}
     @challenge.save
-    redirect_to search_path
+    redirect_to search_songs_path(@challenge)
     # redirect_to invite_friends_path(@challenge)
   end
 

@@ -41,6 +41,8 @@ end
 # Rdio Oauth
 gem 'omniauth'
 gem 'omniauth-rdio'
+
+gem 'pry'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
