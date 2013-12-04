@@ -1,10 +1,23 @@
-<%= form_tag('/challenges/:id/songs/song_results', method: 'get') %> 
+<%= form_tag(song_results_path, method: 'get') %> 
   <label><%= @challenge.name%></label>
  
     <label>Search for Songs</label>
       <div id="search_songs">  
-        <%= text_field_tag :search_song, :placeholder => "Search by Song" %>  
+        <%= text_field_tag :search_song %>  
         <!-- <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> --> 
         <%= submit_tag %> 
       </div>
+
+
+<!--   <%# if @challenge.songs > 0 %> 
+  <div> 
+    Songs in Challenge:  
+    <ul>
+      <%# @challenge.songs.each do |song| %> 
+      <li> 
+        <%#= song.name %> 
+      </li> 
+    </ul> 
+  <%# end %> 
+  <%# end%>  -->
     <!-- <button id="search_song">I'M DONE</button> -->

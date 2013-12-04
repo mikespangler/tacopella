@@ -1,9 +1,9 @@
-<%= form_tag action: search_songs_path, method: 'post' %> 
+<%= form_tag action: 'search_songs_path', method: 'post' %> 
   <label><%= @challenge.name%></label>
  
     <label>Search for Songs</label>
       <div id="search_songs">  
-        <%= text_field_tag :search_song, :placeholder => "Search by Song" %>  
+        <%= text_field_tag :search_song, "Search by Song and Artist" %>  
         <!-- <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> --> 
         <%= submit_tag %> 
       </div>
