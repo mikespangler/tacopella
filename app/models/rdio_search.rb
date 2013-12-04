@@ -23,5 +23,7 @@ class RdioSearch
         name: result.name,
         artist: result.artist_name
       }
-
+    end
+  end
+  
 end

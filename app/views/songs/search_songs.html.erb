@@ -1,27 +1,11 @@
 <form id="search_field">
-  <label><%= @challenge.name%></label>
- 
-    <label>Search for Songs</label>
-      <div id="search_songs">  
-        <%= text_field_tag :search_song %>  
-        <!-- <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> --> 
-        <%= submit_tag %> 
-      </div>
-    <!--<button id="search_song">I'M DONE</button> -->
+  <label><%= @challenge.name%></label> 
+  <label>Search for Songs</label>
+  <div id="search_songs" data-id="<%= @challenge.id %>">  
+    <%= text_field_tag :search_song %>  
+    <input name="commit" type="submit" id="submit_song_search" value="Search" />
+  </div>
 </form><br>
 
 <div id="results_form"></div>
 <div id="preview"></div>
-
-<!--   <%# if @challenge.songs > 0 %> 
-  <div> 
-    Songs in Challenge:  
-    <ul>
-      <%# @challenge.songs.each do |song| %> 
-      <li> 
-        <%#= song.name %> 
-      </li> 
-    </ul> 
-  <%# end %> 
-  <%# end%>  -->
-    <!-- <button id="search_song">I'M DONE</button> -->

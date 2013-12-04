@@ -3,11 +3,10 @@ $(function(){
   $('#submit_song_search').click(function(e) {
     e.preventDefault();
     var search_song, post_path, datums, clicked_button, challenge_id;
-    challenge_id = $(this).parent().attr('name');
+    challenge_id = $(this).parent().attr('data-id');
     search_song = $(this).parent().parent().serialize();
     get_path = "/challenges/" + challenge_id + "/songs/song_results?" + search_song;
     clicked_button = $(this);
-
     console.log('sending search request...');
 
     $.get(get_path, function(response){
@@ -16,16 +15,21 @@ $(function(){
     });
   });
 
-  $('#add_song').click(function(e){
+  $('#results_form').on('click', "#submit_song", function(e){
     e.preventDefault();
-    var add_song_path, challenge_id, song_value;
-    add_song_path = "/challenges/add_songs";
-    challenge_id = $('#submit_song_search').attr('name');
-    song_value = $('select option:selected').attr('value');
+
+    var add_song_path, challenge_id, song_value, song_name, artist_name;
+    add_song_path = "/songs/song_results";
+    challenge_id = $('input:radio:checked').attr('data-challenge');
+    song_key = $('input:radio:checked').attr('value');
+    song_name = $('input:radio:checked').attr('data-songname');
+    artist_name = $('input:radio:checked').attr('data-artistname');
 
     data = {
-      challenge: challenge_id,
-      song: song_value
+      id: challenge_id,
+      song: song_value,
+      artist: artist_name,
+      key: song_key
     };
 
     $.post(add_song_path, data, function(response){
@@ -33,7 +37,6 @@ $(function(){
       $("#preview").html(response);
     });
   });
-
 });
 
   // THIS CODE IS FOR BACK WHEN WE PARSED JSON
