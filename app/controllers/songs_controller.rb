@@ -26,6 +26,7 @@ class SongsController < ApplicationController
   end
 
   def song_results
+    binding.pry
     @rdio_search = RdioSearch.new(params[:search_song])
     respond_to do |f|
       f.json {render :json => @rdio_search} 
@@ -35,10 +36,6 @@ class SongsController < ApplicationController
     #through create you'll add a song to the playlist 
     #then you'll go back to search songs and do it again until you're done making your playlist 
   end
-
-
-
-
 
   private
  
