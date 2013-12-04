@@ -1899,7 +1899,7 @@ meta.foundation-mq-topbar {
 
 button, .button {
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Arbutus", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -1984,11 +1984,11 @@ button, .button {
     text-align: right;
     padding-right: 0.75rem; }
   button.radius, .button.radius {
-    -webkit-border-radius: 3px;
-    border-radius: 3px; }
+    -webkit-border-radius: 8px;
+    border-radius: 8px; }
   button.round, .button.round {
-    -webkit-border-radius: 1000px;
-    border-radius: 1000px; }
+    -webkit-border-radius: 500px;
+    border-radius: 5000px; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
     background-color: #14b9b3;
     border-color: #12a29d;
