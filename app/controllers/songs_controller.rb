@@ -1,9 +1,9 @@
 class SongsController < ApplicationController
-  # before_action :require_login
+   # before_action :require_login
  
   def new
-    @api = api
-    @user = user
+    #@api = api
+    #@user = user
     @challenge = Challenge.find(params[:id])
     #get back songs
     #chose song
@@ -26,7 +26,7 @@ class SongsController < ApplicationController
   end
 
   def song_results
-    @rdio_search = RdioSearch.new(api.search(params[:search_song],types='Song',never_or=nil,extras=nil,count=5))
+    @rdio_search = RdioSearch.new(params[:search_song])
     respond_to do |f|
       f.json {render :json => @rdio_search} 
     end  
@@ -54,7 +54,7 @@ class SongsController < ApplicationController
       api if !api
     end
 
-    helper_method :api
+    #helper_method :api
     helper_method :user
 
 end

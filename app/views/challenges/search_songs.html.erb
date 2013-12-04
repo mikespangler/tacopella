@@ -1,12 +1,12 @@
-<%= form_for(@song) action: 'http://api.rdio.com/1/search' method: 'post' do |f| %> 
+<form action: 'search_songs_path' method: 'post'> 
   <label><%= @challenge.name%></label>
  
     <label>Search for Songs</label>
       <div id="search_songs">   
         <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> 
-        <button id="submit_song_search">SEARCH</button>
+        <%f.submit, "SEARCH" %> 
       </div>
     <!-- <button id="search_song">I'M DONE</button> -->
 
-<% end %> 
+</form> 
 
