@@ -8,12 +8,12 @@
   <section class="top-bar-section" class="taco-body">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li><%= link_to "Make a New Challenge", new_challenge_path %> </a></li>
+      <li><%= link_to "Create Challenge", new_challenge_path %> </a></li>
       <li class="has-dropdown">
-        <a href="#">Popular Challenges</a>
+        <a href="#">Popular</a>
         <ul class="dropdown">
           <% @popular_challenges.each do |challenge| %> 
-          <li><%= link_to challenge.name, challenge_path(challenge) %></li>
+            <li><%= link_to challenge.name, challenge_path(challenge) %></li>
           <% end %> 
         </ul>
       </li>

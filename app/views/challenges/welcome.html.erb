@@ -1,29 +1,28 @@
+<div class= "small-12 small-centered columns">
 
-  <div class= "small-12 small-centered columns">
-
-  <!-- overall top row -->
-  <br><br> 
-  <div class="row">
-    <div class= "small-7 columns">
-      <h1 style="font-family: Arbutus"> Howdy Partner!</h1>
-      <h3> I reckon' yer a music buff? Show me what ya' got! <br>
-      Choose a challenge and identify the song name based on the sample you hear. <br> 
-      We've rangled up some of the hardest challenges out there, <br> 
-      So giddy up cowboy, it's the Wild Wild West out here! </h3> 
-      <br> 
-      <%= link_to "Play Challenges", challenges_path, :class => "button radius" %>  
-      <%= link_to "Create Challenge", new_challenge_path, :class => "button radius" %> 
-    </div>
-    <div class= "small-5 columns">
-      <%= image_tag("singingtaco.png") %>
-    </div>
-  </div>
-
-  <!-- buttons row --> 
-  <div class="row">
-    <div class= "small-8 columns">
+<!-- overall top row -->
+<br><br> 
+<div class="row">
+  <div class= "small-7 columns">
+    <h1 style="font-family: Arbutus"> Howdy Partner!</h1>
+    <h3 class="welcome-message"> I reckon' yer a music buff? Show me what ya' got!<br><br>
+    <strong>★Choose a challenge and identify the song name based on the sample ya' hear.★</strong><br><br>
+    We've rangled up some of the hardest challenges out there,
+    so giddy up cowboy! It's the Wild Wild West out here! </h3> 
     <br> 
-    </div>
-    <div class="small-3 columns"></div>
+    <%= link_to "▶ Play Challenges", challenges_path, :class => "button radius" %>  
+    <%= link_to "Create Challenge", new_challenge_path, :class => "button radius" %> 
   </div>
+  <div class= "small-5 columns">
+    <%= image_tag("singingtaco.png") %>
+  </div>
+</div>
+
+<!-- buttons row --> 
+<div class="row">
+  <div class= "small-8 columns">
+  <br> 
+  </div>
+  <div class="small-3 columns"></div>
+</div>
 </div>
