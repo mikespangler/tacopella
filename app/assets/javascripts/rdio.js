@@ -25,14 +25,35 @@ $(document).ready(function() {
 
   // set up the controls
 
-  $('#play').click(function() {
-    apiswf.rdio_play($('#play_key').val());
+  $('body').on('click', '#play', function(event) {
+    // var diffy;
+    //console.log('I\'m play: '+$('#play_key').attr('value'));
+    apiswf.rdio_play($('#play_key').attr('value'));
+
+    // if ($('#difficulty').attr('value') == '1') {
+    //   diffy = 10000;
+    //   //console.log('easy');
+    // } else if ($('#difficulty').attr('value') == '2') { 
+    //   diffy = 5000;
+    //   //console.log('medium');
+    // } else {
+    //   diffy = 1000;
+    //   //console.log('hard');
+    // }
+    setInterval(function(){ apiswf.rdio_stop();},5000);
+    event.preventDefault();
   });
+
   $('#stop').click(function() { apiswf.rdio_stop(); });
   $('#pause').click(function() { apiswf.rdio_pause(); });
   $('#previous').click(function() { apiswf.rdio_previous(); });
   $('#next').click(function() { apiswf.rdio_next(); });
+
 });
+
+// $('#submit_guess').click(function() {
+//   guess = ($('#guess').val());
+// });
 
 // the global callback object
 var callback_object = {};
@@ -49,6 +70,39 @@ callback_object.ready = function ready(user) {
   });
 
 }
+  // Hide Correct Div on Page Load
+  $(document).ready(function() {
+    $('#correct').hide();
+    $('#wrong').hide();
+  });
+
+  // Submit Answer Actions
+  $('#submit_guess').click(function() {
+
+    var song_name = $('#song_name').attr('value').toLowerCase().replace(/ /g,'');
+
+    var guess = $('#guess').val().toLowerCase().replace(/ /g,'');
+
+    if (song_name === guess) {
+       $('#correct').show();
+       // $('#wrong').hide()
+    } else {
+       $('#correct').hide();
+       // $('#wrong').show();
+    }
+
+    var challenge_id = $('#challenge_id').attr('value');
+    var song_count = parseInt($('#song_count').attr('value'));
+
+    $.get('/challenges/' + challenge_id + '/songs/'+ song_count , function(next_song){
+      console.log(next_song);
+      $('#song_name').attr('value', next_song.name);
+      $('#play_key').attr('value', next_song.play_key);
+      $('#song_count').attr('value', song_count += 1);
+    });
+  });
+
+
 
   // $('#submit_song_search').click(function() {
   //   event.preventDefault();

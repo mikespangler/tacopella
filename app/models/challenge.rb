@@ -1,5 +1,6 @@
 class Challenge < ActiveRecord::Base
   has_many :songs
+  has_many :scores
 
   Difficulty = {
     :easy => 1,

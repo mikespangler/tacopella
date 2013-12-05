@@ -1,54 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-   <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-   <script src="rdio.js"></script>
-   <script type="text/javascript">
-      WebFontConfig = {
-        google: { families: [ 'Arbutus::latin', 'Loved+by+the+King::latin' ] }
-      };
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })(); </script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "vendor/modernizr" %>
-    <%= csrf_meta_tags %>
-  </head>
+    <h1><%= @challenge.name %></h1><br>
 
-  <body>
+    <h2 class="hidden" id="correct">CORRECT!!!<br>READY FOR THE NEXT ONE?</h2>
+    <h2 class="hidden" id="wrong">WOMP WOMP<br>TRY AGAIN!</h2>
 
-    <div class="off-canvas-wrap">
-      <div class="inner-wrap">
+    <param id="difficulty" value="<%= @challenge.difficulty %>">
 
-        <a class="left-off-canvas-togger"> <Menu></a>
-
-        <aside class="left-off-canvas-menu">
-          <ul>
-            <li><a href="#"> Challenges </a></li>
-            <li><a href="#"> Create </a></li> 
-            <li><a href="#"> Scoreboard </a></li>
-          </ul>
-        </aside>
-          <%= yield %>
-        <a class="exit-off-canvas"></a>
-      </div>
     </div>
-    <%= javascript_include_tag "application" %>
-</div>
-<div id="apiswf"></div>
+  <div id="apiswf"></div>
   <dl>
-    <dt>playState</dt>
+   <!--  <dt>playState</dt>
     <dd id="playState"></dd>
     <dt>track</dt>
     <dd id="track"></dd>
@@ -57,15 +19,24 @@
     <dt>artist</dt>
     <dd id="artist"></dd>
     <dt>art</dt>
-    <dd><img src="" id="art"></dd>
-    <dt>position</dt>
-    <dd id="position"></dd>
+    <dd><img src="" id="art"></dd> -->
+<!--     <dt>SCORE</dt>
+    <dd id="position"></dd> -->
   </dl>
-  <input id="play_key" value="t7088579"><button id="play">Play</button><br>
-  <button id="stop">Stop</button>
-  <button id="pause">Pause</button>
-  <button id="previous">Previous</button>
-  <button id="next">Next</button>
-  </body>
+    <param id="challenge_id" value="<%= @challenge.id %>">
+    <param id="song_count" value="<%= @song_count %>">
+    <param id="challenge_songs_array" value="<%= @challenge.songs.all %>">
+    <param id="song_object" value="<%= @song %>">
+    <param id="song_name" value="<%= @song.name %>">
+    <param id="play_key" value="<%= @song.play_key %>">
+    <button id="play">PUSH TO START</button><br>
+    <!-- <button id="stop">Stop</button><br> -->
+    <input id="guess" placeholder="What Song is Playing???"><br>
+    <button id="submit_guess">Submit Guess</button>
 
-</html>
+  <%= form_tag(update_challenge_path, method: "post") do %>
+    <%= label_tag(:guess, "Search for:") %>
+    <%= text_field_tag(:guess) %>
+    <%= hidden_field_tag(:song_name, @song.name) %>
+    <%= submit_tag("Submit Guess") %>
+  <% end %>

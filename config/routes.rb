@@ -10,12 +10,13 @@ Tacopella::Application.routes.draw do
    get 'challenges/:id/add_songs' => 'challenges#add_songs', :as => :add_songs
   # You can have the root of your site routed with "root"
    root 'challenges#welcome'
-
+   get 'challenges/:id/show' => 'challenges#show' , :as => :show_challenge
    get 'challenges/:id/songs/search' => 'songs#search_songs', :as => :search_songs
 
    #post 'challenges/:id/songs/search' => 'songs#create_search_results'
    post 'challenges/:id/songs/song_results' => 'songs#song_results', :as => :song_results 
-
+   post 'challenges/:id/updates' => 'challenges#update', :as => :update_challenge
+   get 'challenges/:id/songs/:song_count' => 'challenges#get_next_song', :as => :get_next_song
    # match "/auth/:provider/callback" => "sessions#create", via: [:get,:post]
    # match "/signout" => "sessions#destroy", :as => :signout, via: [:get,:post]
 

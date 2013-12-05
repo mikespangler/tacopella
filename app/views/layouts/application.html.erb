@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
    <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-   <script src="application.js"></script>
    <script type="text/javascript">
       WebFontConfig = {
         google: { families: [ 'Arbutus::latin', 'Loved+by+the+King::latin' ] }
@@ -21,7 +20,7 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
+    <%= stylesheet_link_tag  "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
