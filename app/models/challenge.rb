@@ -1,6 +1,9 @@
 class Challenge < ActiveRecord::Base
   has_many :songs
+  has_many :scores
+
   attr_reader :difficulty_level
+
 
   def difficulty_level
     if self.difficulty == 1
