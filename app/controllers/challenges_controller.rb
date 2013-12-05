@@ -25,19 +25,19 @@ class ChallengesController < ApplicationController
   end
 
 
-  def update
-    @challenge = Challenge.find(params[:id])
-    # guess = params[:guess].downcase.strip
-    # song_name = params[:song_name].downcase.strip
-    # if guess == song_name
-    #   @correct = true
-    # else
-    #   @correct = false
-    # end
-    # @score += params [thing]
-    #@score = Score.find(params[:id])
-    redirect_to show_challenge_path
-  end
+  # def update
+  #   @challenge = Challenge.find(params[:id])
+  #   # guess = params[:guess].downcase.strip
+  #   # song_name = params[:song_name].downcase.strip
+  #   # if guess == song_name
+  #   #   @correct = true
+  #   # else
+  #   #   @correct = false
+  #   # end
+  #   # @score += params [thing]
+  #   #@score = Score.find(params[:id])
+  #   redirect_to show_challenge_path
+  # end
 
   def new 
     @challenge = Challenge.new
@@ -45,6 +45,7 @@ class ChallengesController < ApplicationController
   end
 
   def yer_done
+    @challenge = Challenge.find(params[:id])
   end
 
   def create 
@@ -78,7 +79,7 @@ class ChallengesController < ApplicationController
     receivers_arr.each do |receiver|
       ChallengeMailer.invite_friends(params[:sender], receiver, @challenge).deliver
     end
-    redirect_to yer_done_path
+    redirect_to yer_done_path(@challenge)
   end
 
   private
