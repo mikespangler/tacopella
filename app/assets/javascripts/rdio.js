@@ -40,7 +40,7 @@ $(document).ready(function() {
     //   diffy = 1000;
     //   //console.log('hard');
     // }
-    setInterval(function(){ apiswf.rdio_stop();},5000);
+    setInterval(function(){ apiswf.rdio_stop();},8000);
     event.preventDefault();
   });
 
@@ -49,8 +49,8 @@ $(document).ready(function() {
   $('#previous').click(function() { apiswf.rdio_previous(); });
   $('#next').click(function() { apiswf.rdio_next(); });
 
-});
 
+});
 
 
 
@@ -69,19 +69,13 @@ callback_object.ready = function ready(user) {
   });
 
 }
-  // Hide Correct Div on Page Load
-  $(document).ready(function() {
-    $('#correct').hide();
-    $('#wrong').hide();
-    $('#game_over').hide();
-    $('#score').hide();
 
-  });
+$(document).ready(function(){
   var score = parseInt($('#score').text());
   var song_count = parseInt($('#song_count').attr('value'));
 
   // Submit Answer Actions
-  $('#submit_guess').click(function() {
+    $('#submit_guess').click(function() {
     // console.log(song_count+1);
     // console.log($('#challenge_size').attr('value'));
     if ((song_count + 1) < ($('#challenge_size').attr('value'))) {
@@ -91,8 +85,8 @@ callback_object.ready = function ready(user) {
 
       if (song_name === guess) {
          $('#correct').show();
-         $('#wrong').hide()
-         $('#score').text(score += 1)
+         $('#wrong').hide();
+         $('#score').text(score += 1);
       } else {
          $('#correct').hide();
          $('#wrong').show();
@@ -110,13 +104,14 @@ callback_object.ready = function ready(user) {
     } else {
 
       console.log('Hello!');
-      $('#wrong').hide()
+      $('#wrong').hide();
       $('#correct').hide();
       $('#game_over').show();
       $('#score').show();
     }
   });
-
+});
+  
 
 
 callback_object.freeRemainingChanged = function freeRemainingChanged(remaining) {
