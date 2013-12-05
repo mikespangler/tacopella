@@ -9,7 +9,7 @@ $(function() {
       return false; //prevent form submission
   });
 
-    $('#correct').hide();
+  $('#correct').hide();
   $('#wrong').hide();
   $('#game_over').hide();
   $('#score').hide();
