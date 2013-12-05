@@ -20,7 +20,7 @@ Tacopella::Application.routes.draw do
   get 'challenges/:id/songs/song_results' => 'songs#song_results', :as => :song_results 
   post 'songs/song_results' => 'challenges#update'
 
-  get 'challenges/yer_done' => 'challenges#yer_done', :as => :yer_done
+  get 'challenges/:id/yer_done' => 'challenges#yer_done', :as => :yer_done
 
 
 
