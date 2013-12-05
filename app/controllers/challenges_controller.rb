@@ -14,6 +14,9 @@ class ChallengesController < ApplicationController
     @song = Song.new
   end
 
+  def yer_done
+  end
+
   def create 
     @challenge = Challenge.create(challenge_params)
     # params[:song].each {|song| @challenge.songs.build(:name => song)}
@@ -45,7 +48,7 @@ class ChallengesController < ApplicationController
     receivers_arr.each do |receiver|
       ChallengeMailer.invite_friends(params[:sender], receiver, @challenge).deliver
     end
-    redirect_to challenges_path
+    redirect_to yer_done_path
   end
 
   private
