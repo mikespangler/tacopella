@@ -25,19 +25,19 @@ class ChallengesController < ApplicationController
   end
 
 
-  def update
-    @challenge = Challenge.find(params[:id])
-    # guess = params[:guess].downcase.strip
-    # song_name = params[:song_name].downcase.strip
-    # if guess == song_name
-    #   @correct = true
-    # else
-    #   @correct = false
-    # end
-    # @score += params [thing]
-    #@score = Score.find(params[:id])
-    redirect_to show_challenge_path
-  end
+  # def update
+  #   @challenge = Challenge.find(params[:id])
+  #   # guess = params[:guess].downcase.strip
+  #   # song_name = params[:song_name].downcase.strip
+  #   # if guess == song_name
+  #   #   @correct = true
+  #   # else
+  #   #   @correct = false
+  #   # end
+  #   # @score += params [thing]
+  #   #@score = Score.find(params[:id])
+  #   redirect_to show_challenge_path
+  # end
 
   def new 
     @challenge = Challenge.new
