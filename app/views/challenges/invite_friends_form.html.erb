@@ -1,11 +1,18 @@
-<%= form_tag "/challenges/invite-friends" do %>
+<br><br>
+<div class="row">
+  <div class="small-10 small-centered columns">
+    <h1 style="font-family: Arbutus"> Invite yer pals to the showdown </h1>
+    <h3> Don't be shy now, cowboy. Let yer friends knows about the challenge you've created so they can play.</h3>
+    <%= form_tag "/challenges/invite-friends" do %>
 
-  <%= text_field_tag :sender, "Enter your email" %><br>
+      <%= text_field_tag :sender, nil, placeholder: "Yer email" %><br>
 
-  <%= text_area_tag :receivers, "Your friends' emails, separated by commas. Ex: your@friend.com, other@friend.com", {cols: 50, rows: 3} %><br>
+      <%= text_area_tag :receivers, nil, placeholder: "Yer friends' emails, separated by commas. Eg: oldblue@cactus.com, aboynamedsue@friend.com"  %><br>
 
-  <%= hidden_field_tag :id, @challenge.id %>
+      <%= hidden_field_tag :id, @challenge.id %>
 
-  <%= submit_tag "Send" %>
+      <%= submit_tag "Send", :class => "button radius" %>
 
-<% end %>
+    <% end %>
+  </div>
+</div>

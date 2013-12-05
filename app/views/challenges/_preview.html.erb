@@ -4,7 +4,8 @@
 <% else %>   
     <ul>
     <% @challenge.songs.each do |song| %> 
-      <li> <%= song.name %> </li> 
-    </ul> 
+      <li> <%= song.name %> </li>  
   <% end %> 
+  </ul>
 <% end%> 
+<%= link_to "I'm done!", invite_friends_path(@challenge), :class => "button radius" %> 
