@@ -69,14 +69,6 @@ callback_object.ready = function ready(user) {
   });
 
 }
-  // Hide Correct Div on Page Load
-  $(document).ready(function() {
-    $('#correct').hide();
-    $('#wrong').hide();
-    $('#game_over').hide();
-    $('#score').hide();
-
-  });
   var score = parseInt($('#score').text());
   var song_count = parseInt($('#song_count').attr('value'));
 
