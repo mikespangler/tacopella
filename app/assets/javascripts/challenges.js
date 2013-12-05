@@ -8,4 +8,9 @@ $(function() {
       $(this).parent().remove();
       return false; //prevent form submission
   });
+
+    $('#correct').hide();
+  $('#wrong').hide();
+  $('#game_over').hide();
+  $('#score').hide();
 } );
