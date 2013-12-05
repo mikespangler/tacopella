@@ -11,21 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20131204192550) do
-=======
-ActiveRecord::Schema.define(version: 20131204000453) do
->>>>>>> 26f5b925243520bd6b394f17206be03c82fd11cf
 
   create_table "challenges", force: true do |t|
     t.string   "name"
     t.integer  "difficulty"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-<<<<<<< HEAD
-  create_table "results", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,8 +26,6 @@ ActiveRecord::Schema.define(version: 20131204000453) do
     t.integer "challenge_id"
   end
 
-=======
->>>>>>> 26f5b925243520bd6b394f17206be03c82fd11cf
   create_table "songs", force: true do |t|
     t.string   "name"
     t.integer  "challenge_id"

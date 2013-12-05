@@ -1,25 +1,23 @@
+<div class="row"> 
+  <div class="small-3 columns"><div id="apiswf"></div></div>
+  <div class="medium-6 small-centered columns">
+    <h1>Play Challenge: <%= @challenge.name %></h1>
+    <h4 id="score">Current Score: 0</h4>
+    <h2 class="hidden" id="game_over">GAME OVER!</h2>
+    <h3 class="hidden" id="correct">CORRECT!!!<br>PRESS 'PLAY SONG' FOR THE NEXT TRACK</h3>
+    <h3 class="hidden" id="wrong">WOMP WOMP<br>TRY AGAIN!<br>PRESS 'PLAY SONG' FOR THE NEXT TRACK</h3><br>
 
-
-<h1><%= @challenge.name %></h1><br>
-<h2 class="hidden" id="game_over">GAME OVER!</h2>
-<h3 class="hidden" id="correct">CORRECT!!!<br>PRESS 'PLAY SONG' FOR THE NEXT TRACK</h3>
-<h3 class="hidden" id="wrong">WOMP WOMP<br>TRY AGAIN!<br>PRESS 'PLAY SONG' FOR THE NEXT TRACK</h3><br>
-<h4 id="score">0</h4>
-
-
-
-<div id="apiswf"></div>
-
-<param id="challenge_size" value="<%= @challenge.songs.all.size%>">
-<param id="difficulty" value="<%= @challenge.difficulty %>">
-<param id="challenge_id" value="<%= @challenge.id %>">
-<param id="song_count" value="<%= @song_count %>">
-<!-- <param id="challenge_songs_array" value="<%#= @challenge.songs.all %>"> -->
-<!-- <param id="song_object" value="<%#= @song %>"> -->
-<param id="song_name" value="<%= @song.name %>">
-<param id="play_key" value="<%= @song.play_key %>">
-<button id="play">Play Song</button><br>
-<!-- <button id="stop">Stop</button><br> -->
-<input id="guess" placeholder="What Song is Playing???"><br>
-<button id="submit_guess">Submit Guess</button>
-
+    <param id="challenge_size" value="<%= @challenge.songs.all.size%>">
+    <param id="difficulty" value="<%= @challenge.difficulty %>">
+    <param id="challenge_id" value="<%= @challenge.id %>">
+    <param id="song_count" value="<%= @song_count %>">
+    <!-- <param id="challenge_songs_array" value="<%#= @challenge.songs.all %>"> -->
+    <!-- <param id="song_object" value="<%#= @song %>"> -->
+    <param id="song_name" value="<%= @song.name %>">
+    <param id="play_key" value="<%= @song.play_key %>">
+    <input class= "input field" id="guess" placeholder="Name that tune!"><br><br>
+    <button id="play" class="button radius">Play Song</button>
+    <button id="submit_guess" class="button radius">Submit Guess</button>
+    </div>
+  <div class="small-3 columns"></div>
+</div>
