@@ -51,9 +51,8 @@ $(document).ready(function() {
 
 });
 
-// $('#submit_guess').click(function() {
-//   guess = ($('#guess').val());
-// });
+
+
 
 // the global callback object
 var callback_object = {};
@@ -74,32 +73,48 @@ callback_object.ready = function ready(user) {
   $(document).ready(function() {
     $('#correct').hide();
     $('#wrong').hide();
+    $('#game_over').hide();
+    $('#score').hide();
+
   });
+  var score = parseInt($('#score').text());
+  var song_count = parseInt($('#song_count').attr('value'));
 
   // Submit Answer Actions
   $('#submit_guess').click(function() {
+    // console.log(song_count+1);
+    // console.log($('#challenge_size').attr('value'));
+    if ((song_count + 1) < ($('#challenge_size').attr('value'))) {
 
-    var song_name = $('#song_name').attr('value').toLowerCase().replace(/ /g,'');
+      var song_name = $('#song_name').attr('value').toLowerCase().replace(/ /g,'');
+      var guess = $('#guess').val().toLowerCase().replace(/ /g,'');
 
-    var guess = $('#guess').val().toLowerCase().replace(/ /g,'');
+      if (song_name === guess) {
+         $('#correct').show();
+         $('#wrong').hide()
+         $('#score').text(score += 1)
+      } else {
+         $('#correct').hide();
+         $('#wrong').show();
+      }
 
-    if (song_name === guess) {
-       $('#correct').show();
-       // $('#wrong').hide()
+      var challenge_id = $('#challenge_id').attr('value');
+      
+      $.get('/challenges/' + challenge_id + '/songs/'+ song_count , function(next_song){
+        console.log(next_song);
+        $('#song_name').attr('value', next_song.name);
+        $('#play_key').attr('value', next_song.play_key);
+        $('#song_count').attr('value', song_count += 1);
+      });
+
     } else {
-       $('#correct').hide();
-       // $('#wrong').show();
+
+      console.log('Hello!');
+      $('#wrong').hide()
+      $('#correct').hide();
+      $('#game_over').show();
+      $('#score').show();
     }
-
-    var challenge_id = $('#challenge_id').attr('value');
-    var song_count = parseInt($('#song_count').attr('value'));
-
-    $.get('/challenges/' + challenge_id + '/songs/'+ song_count , function(next_song){
-      console.log(next_song);
-      $('#song_name').attr('value', next_song.name);
-      $('#play_key').attr('value', next_song.play_key);
-      $('#song_count').attr('value', song_count += 1);
-    });
   });
 
 

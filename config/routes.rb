@@ -1,9 +1,6 @@
 Tacopella::Application.routes.draw do
   resources :songs
-
   resources :challenges
-    get 'challenges/:id/invite-friends' => 'challenges#invite_friends_form', :as => :invite_friends
-    post 'challenges/:id/invite-friends' => 'challenges#invite_friends'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -20,12 +17,27 @@ Tacopella::Application.routes.draw do
    get 'challenges/:id/songs/:song_count' => 'challenges#get_next_song', :as => :get_next_song
 
    post 'songs/song_results' => 'challenges#update'
+
+  # root 'challenges#welcome'
+  # get 'challenges/:id/invite-friends' => 'challenges#invite_friends_form', :as => :invite_friends
+  # post 'challenges/invite-friends' => 'challenges#invite_friends'
+
+  # post 'challenges/add_songs' => 'challenges#add_songs', :as => :add_songs
+
+  # get 'challenges/:id/songs/search' => 'songs#search_songs', :as => :search_songs
+
+  # #post 'challenges/:id/songs/search' => 'songs#create_search_results'
+  # get 'challenges/:id/songs/song_results' => 'songs#song_results', :as => :song_results 
+  # post 'songs/song_results' => 'challenges#update'
    
-   # get 'challenges/:id/songs/song_results/show' => 'song'
+  # get 'challenges/:id/songs/song_results/show' => 'song'
 
 
    # match "/auth/:provider/callback" => "sessions#create", via: [:get,:post]
    # match "/signout" => "sessions#destroy", :as => :signout, via: [:get,:post]
+
+  # match "/auth/:provider/callback" => "sessions#create", via: [:get,:post]
+  # match "/signout" => "sessions#destroy", :as => :signout, via: [:get,:post]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

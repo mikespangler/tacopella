@@ -1,42 +1,25 @@
 
 
-    <h1><%= @challenge.name %></h1><br>
+<h1><%= @challenge.name %></h1><br>
+<h2 class="hidden" id="game_over">GAME OVER!</h2>
+<h3 class="hidden" id="correct">CORRECT!!!<br>PRESS 'PLAY SONG' FOR THE NEXT TRACK</h3>
+<h3 class="hidden" id="wrong">WOMP WOMP<br>TRY AGAIN!<br>PRESS 'PLAY SONG' FOR THE NEXT TRACK</h3><br>
+<h4 id="score">0</h4>
 
-    <h2 class="hidden" id="correct">CORRECT!!!<br>READY FOR THE NEXT ONE?</h2>
-    <h2 class="hidden" id="wrong">WOMP WOMP<br>TRY AGAIN!</h2>
 
-    <param id="difficulty" value="<%= @challenge.difficulty %>">
 
-    </div>
-  <div id="apiswf"></div>
-  <dl>
-   <!--  <dt>playState</dt>
-    <dd id="playState"></dd>
-    <dt>track</dt>
-    <dd id="track"></dd>
-    <dt>album</dt>
-    <dd id="album"></dd>
-    <dt>artist</dt>
-    <dd id="artist"></dd>
-    <dt>art</dt>
-    <dd><img src="" id="art"></dd> -->
-<!--     <dt>SCORE</dt>
-    <dd id="position"></dd> -->
-  </dl>
-    <param id="challenge_id" value="<%= @challenge.id %>">
-    <param id="song_count" value="<%= @song_count %>">
-    <param id="challenge_songs_array" value="<%= @challenge.songs.all %>">
-    <param id="song_object" value="<%= @song %>">
-    <param id="song_name" value="<%= @song.name %>">
-    <param id="play_key" value="<%= @song.play_key %>">
-    <button id="play">PUSH TO START</button><br>
-    <!-- <button id="stop">Stop</button><br> -->
-    <input id="guess" placeholder="What Song is Playing???"><br>
-    <button id="submit_guess">Submit Guess</button>
+<div id="apiswf"></div>
 
-  <%= form_tag(update_challenge_path, method: "post") do %>
-    <%= label_tag(:guess, "Search for:") %>
-    <%= text_field_tag(:guess) %>
-    <%= hidden_field_tag(:song_name, @song.name) %>
-    <%= submit_tag("Submit Guess") %>
-  <% end %>
+<param id="challenge_size" value="<%= @challenge.songs.all.size%>">
+<param id="difficulty" value="<%= @challenge.difficulty %>">
+<param id="challenge_id" value="<%= @challenge.id %>">
+<param id="song_count" value="<%= @song_count %>">
+<!-- <param id="challenge_songs_array" value="<%#= @challenge.songs.all %>"> -->
+<!-- <param id="song_object" value="<%#= @song %>"> -->
+<param id="song_name" value="<%= @song.name %>">
+<param id="play_key" value="<%= @song.play_key %>">
+<button id="play">Play Song</button><br>
+<!-- <button id="stop">Stop</button><br> -->
+<input id="guess" placeholder="What Song is Playing???"><br>
+<button id="submit_guess">Submit Guess</button>
+
