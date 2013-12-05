@@ -3,7 +3,8 @@
   <div class="medium-6 small-centered columns">
     <h1>Play Challenge: <%= @challenge.name %></h1>
     <h4>Your Score:</h4><h4 id="score">0</h4>
-    <h2 class="hidden" id="game_over">GAME OVER!</h2>
+    <h4 id="score">Current Score: 0</h4>
+    <h2 class="hidden" id="game_over">GAME OVER!<br><%= link_to "back to challenges", challenges_path, :class => "button small radius" %> </h2>
     <h3 class="hidden" id="correct">CORRECT!!!<br>PRESS 'PLAY SONG' FOR THE NEXT TRACK</h3>
     <h3 class="hidden" id="wrong">WOMP WOMP<br>TRY AGAIN!<br>PRESS 'PLAY SONG' FOR THE NEXT TRACK</h3><br>
 
