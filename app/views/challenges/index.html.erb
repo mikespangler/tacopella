@@ -7,6 +7,7 @@
     <% if index % 3 == 0 %><div class='row'><% end %>
     <div class="small-4 columns index-squares">
       <%= link_to challenge.name, challenge_path(challenge) %>
+      <br> <%= challenge.difficulty_level %> 
     </div>
   <% if index % 3 == 2 %></div><% end %>
     <% end %> 
