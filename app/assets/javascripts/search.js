@@ -1,5 +1,7 @@
 $(function(){
 
+  $("#results_form").toggle();
+
   $('#submit_song_search').click(function(e) {
     e.preventDefault();
     var search_song, post_path, datums, clicked_button, challenge_id;
@@ -12,6 +14,7 @@ $(function(){
     $.get(get_path, function(response){
       console.log(response);
       $("#results_form").html(response);
+      $("#results_form").toggle("slow");
     });
   });
 
@@ -35,6 +38,7 @@ $(function(){
     $.post(add_song_path, data, function(response){
       console.log(response);
       $("#preview").html(response);
+      $("#results_form").toggle("slow");
     });
   });
 });
