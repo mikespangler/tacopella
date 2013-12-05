@@ -23,7 +23,6 @@ class ChallengesController < ApplicationController
   end
 
   def update
-    raise params.inspect
     @challenge = Challenge.find(params[:id])
     @song = @challenge.songs.build({:play_key => params[:key], :name => params[:song]})
     @song.save

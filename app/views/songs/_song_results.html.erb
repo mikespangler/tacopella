@@ -1,6 +1,11 @@
-<%= form_for @challenge, id: "add_song" do |f| %> 
-  <% @rdio_search.search_results.each do |result| %>
-    <input type="radio" name="song" data-challenge="<%= @challenge.id %>" data-artistname="<%= result.artist_name %>" data-songname="<%= result.name %>" value="<%= result.key %>" /><%= "#{result.artist_name} - #{result.name}" %><br>
+<%= form_for @challenge, id: "add_song" do |f| %>
+  <h3> Search results: Pick one ya' hear! </h3>
+  <ul class="no-bullet"> 
+    <% @rdio_search.search_results.each do |result| %>
+    <li> 
+      <input type="radio" name="song" data-challenge="<%= @challenge.id %>" data-artistname="<%= result.artist_name %>" data-songname="<%= result.name %>" value="<%= result.key %>" /><%= "#{result.artist_name} - #{result.name}" %>
+    </li>
   <% end %>
-  <button type="submit" id="submit_song">Add Song to Challenge</button> 
+  </ul>
+  <button type="submit" id="submit_song" class="button radius">Add Song</button> 
 <% end %>

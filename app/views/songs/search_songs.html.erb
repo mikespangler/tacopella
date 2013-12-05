@@ -1,51 +1,27 @@
 <br><br> 
-  <!-- Playlist previewer or message -->
+
   <div class="row">
+    <!-- Playlist previewer or message --> 
     <div id="preview" class="small-4 columns">
-      <h3>Your Challenge list:</h3>
-      <% if @challenge.songs.count == 0 %>
-          <h4> Well dang! It looks like you haven't added anything yet. You best git to searchin' right away! </h4>
-      <% else %>   
-          <ul>
-          <% @challenge.songs.each do |song| %> 
-            <li> <%= song.name %> </li> 
-          </ul> 
-        <% end %> 
-      <% end%>  
+      <%= render 'challenges/preview' %> 
     </div>
-    <div class="small-4 small-centered columns">
+    <!-- end playlist --> 
+
+    <!-- Search area --> 
+    <div class="small-4 columns">
       <form id="search_field">
-      <%#= form_tag(song_results_path, method: 'get') %> 
         <h3 style="text-align: center">Select songs for: <%= @challenge.name%></p></h3>
 
           <div id="search_songs" data-id="<%= @challenge.id %>"> 
             <%= text_field_tag :search_song, nil, placeholder: "Search for song title & artist name", style: "text-align: center" %>  
-          <div style="text-align: center"> 
-            <%#= submit_tag "Giddyup!", class: "button small radius" %> 
-            <input name="commit" type="submit" id="submit_song_search" value="Search" />
+            <input name="commit" type="submit" id="submit_song_search" value="Search" class="button small radius" />
           </div>
-          </div>
+      </form>
     </div>
+    <!-- end Search -->
+
+    <!-- Search results area --> 
     <div id="results_form" class="small-4 columns">
-      <%#= render 'song_results' %> 
+      
     </div>
   </div>
-  <!-- end search bar --> 
-  <!-- Results and playlist preview section-->
-    
-  </div>
-  <!-- end results and playlist --> 
-
-=======
-<form id="search_field">
-  <label><%= @challenge.name%></label> 
-  <label>Search for Songs</label>
-  <div id="search_songs" data-id="<%= @challenge.id %>">  
-    <%= text_field_tag :search_song %>  
-    <input name="commit" type="submit" id="submit_song_search" value="Search" />
-  </div>
-</form><br>
-
-<div id="results_form"></div>
-<div id="preview"></div>
->>>>>>> 8bfffdde4838139e056b7c5c1ccc9f9b6ad19e85

@@ -18,7 +18,7 @@ $(function(){
   $('#results_form').on('click', "#submit_song", function(e){
     e.preventDefault();
 
-    var add_song_path, challenge_id, song_value, song_name, artist_name;
+    var add_song_path, challenge_id, song_key, song_name, artist_name;
     add_song_path = "/songs/song_results";
     challenge_id = $('input:radio:checked').attr('data-challenge');
     song_key = $('input:radio:checked').attr('value');
@@ -27,7 +27,7 @@ $(function(){
 
     data = {
       id: challenge_id,
-      song: song_value,
+      song: song_name,
       artist: artist_name,
       key: song_key
     };
