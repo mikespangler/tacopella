@@ -1,7 +1,14 @@
-<% @challenges.each_with_index do |challenge, index| %>
-  <% if index % 3 == 0 %><div class='row'><% end %>
+<br><br>
+<div class"row">
+  <div class="small-10 small-centered columns">
+    <h1> Ride 'em cowboy!</h1> 
+    <h3> If yer up for the challenge, take a shot at one of these here challenges. The difficulty level determines how long each song will play for before you have to git ta' guessin'</h3> 
+   <% @challenges.each_with_index do |challenge, index| %>
+    <% if index % 3 == 0 %><div class='row'><% end %>
     <div class="small-4 columns index-squares">
       <%= link_to challenge.name, challenge_path(challenge) %>
     </div>
   <% if index % 3 == 2 %></div><% end %>
-<% end %> 
+    <% end %> 
+  </div>
+</div>

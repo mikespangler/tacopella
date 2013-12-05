@@ -7,11 +7,44 @@ class ChallengesController < ApplicationController
 
   def show 
     @challenge = Challenge.find(params[:id])
+    @song_count = 0
+
+    #@songs_array = @challenge.METHOD
+    # if !@score
+    #   @score = @challenge.scores.build(:value => 0)
+    # end
+    @song = @challenge.songs[0]
+  end
+
+  def get_next_song
+    @song_count = params[:song_count].to_i
+    @song_count += 1
+    @challenge = Challenge.find(params[:id])
+    @song = @challenge.songs[@song_count]
+    render json: @song.to_json
+  end
+
+
+  def update
+    @challenge = Challenge.find(params[:id])
+    # guess = params[:guess].downcase.strip
+    # song_name = params[:song_name].downcase.strip
+    # if guess == song_name
+    #   @correct = true
+    # else
+    #   @correct = false
+    # end
+    # @score += params [thing]
+    #@score = Score.find(params[:id])
+    redirect_to show_challenge_path
   end
 
   def new 
     @challenge = Challenge.new
     @song = Song.new
+  end
+
+  def yer_done
   end
 
   def create 
@@ -45,7 +78,7 @@ class ChallengesController < ApplicationController
     receivers_arr.each do |receiver|
       ChallengeMailer.invite_friends(params[:sender], receiver, @challenge).deliver
     end
-    redirect_to challenges_path
+    redirect_to yer_done_path
   end
 
   private
