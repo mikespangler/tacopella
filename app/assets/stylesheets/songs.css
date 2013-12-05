@@ -1,0 +1,10 @@
+h1, h2, h3, h4, h5, h6 .taco-header {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fresca', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
