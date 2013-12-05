@@ -40,7 +40,7 @@ $(document).ready(function() {
     //   diffy = 1000;
     //   //console.log('hard');
     // }
-    setInterval(function(){ apiswf.rdio_stop();},5000);
+    setInterval(function(){ apiswf.rdio_stop();},8000);
     event.preventDefault();
   });
 
