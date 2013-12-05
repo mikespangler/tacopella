@@ -1,3 +1,10 @@
-<% @results.each do |result| %> 
-<%= result %> 
+<%= form_for(@challenge) do |f| %> 
+  <h3> Search results: Pick one ya' hear! </h3>
+  <ul class="no-bullet">
+  <% @rdio_search.search_results.each do |result| %> 
+  <li> <input type="radio" name= key value= <%= result.key %> >  <%= result.name %> by <%= result.artist_name %> 
+  <%= f.hidden_field :song_name, :value => result.name %></li>
+  <% end %> 
+  </end>
+  <%= f.submit "Add Song", :class => "button radius" %> 
 <% end %> 

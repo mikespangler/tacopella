@@ -1,0 +1,10 @@
+<h3>Your Challenge list:</h3>
+<% if @challenge.songs.count == 0 %>
+    <h4> Well dang! It looks like you haven't added anything yet. You best git to searchin' right away! </h4>
+<% else %>   
+    <ul>
+    <% @challenge.songs.each do |song| %> 
+      <li> <%= song.name %> </li> 
+    </ul> 
+  <% end %> 
+<% end%> 

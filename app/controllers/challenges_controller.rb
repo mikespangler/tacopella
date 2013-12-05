@@ -1,7 +1,5 @@
 class ChallengesController < ApplicationController
   before_action :set_challenges
-
-
   
   def index
     @challenges = Challenge.all
@@ -52,6 +50,13 @@ class ChallengesController < ApplicationController
     @challenge.save
     redirect_to search_songs_path(@challenge)
     # redirect_to invite_friends_path(@challenge)
+  end
+
+  def update
+    @challenge = Challenge.find(params[:id])
+    @song = @challenge.songs.build({:play_key => params[:key], :name => params[:song]})
+    @song.save
+    render :partial => 'challenges/preview', :format => 'text/html'
   end
 
   def welcome

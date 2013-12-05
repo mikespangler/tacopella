@@ -104,25 +104,6 @@ callback_object.ready = function ready(user) {
 
 
 
-  // $('#submit_song_search').click(function() {
-  //   event.preventDefault();
-  //   var search_song, post_path, datums, clicked_button, challenge_id;
-  //   challenge_id = $(this).parent().attr('name');
-  //   search_song = $(this).parent().parent().serialize();
-  //   get_path = "/challenges/" + challenge_id + "/songs/search.json?" + search_song;
-  //   clicked_button = $(this);
-
-  //   console.log('sending search request...');
-  //   $.ajax({
-  //     url: get_path,
-  //     type: 'get',
-  //     dataType: 'json',
-  //     // crossDomain: true,
-  //     success: function(data) { console.log('hi'); }
-  //   });
-  // });
-
-
 callback_object.freeRemainingChanged = function freeRemainingChanged(remaining) {
   $('#remaining').text(remaining);
 }

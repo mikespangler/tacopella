@@ -1,10 +1,27 @@
-<%= form_for(@challenge) do |f|%> 
-  <label><%= @challenge.name%></label>
- 
-    <label>Search for Songs</label>
-      <div id="search_songs" name="<%=@challenge.id%>">   
-        <input type="text" name="search_song" placeholder="Search By Artist, Song, or Album"> </input>
-        <button id="submit_song_search">SEARCH</button>
-      </div>
-    <!--<button id="search_song">I'M DONE</button> -->
-<% end %> 
+<br><br> 
+
+  <div class="row">
+    <!-- Playlist previewer or message --> 
+    <div id="preview" class="small-4 columns">
+      <%= render 'challenges/preview' %> 
+    </div>
+    <!-- end playlist --> 
+
+    <!-- Search area --> 
+    <div class="small-4 columns">
+      <form id="search_field">
+        <h3 style="text-align: center">Select songs for: <%= @challenge.name%></p></h3>
+
+          <div id="search_songs" data-id="<%= @challenge.id %>"> 
+            <%= text_field_tag :search_song, nil, placeholder: "Search for song title & artist name", style: "text-align: center" %>  
+            <input name="commit" type="submit" id="submit_song_search" value="Search" class="button small radius" />
+          </div>
+      </form>
+    </div>
+    <!-- end Search -->
+
+    <!-- Search results area --> 
+    <div id="results_form" class="small-4 columns">
+      
+    </div>
+  </div>
