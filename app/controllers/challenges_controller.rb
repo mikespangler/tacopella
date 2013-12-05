@@ -45,6 +45,7 @@ class ChallengesController < ApplicationController
   end
 
   def yer_done
+    @challenge = Challenge.find(params[:id])
   end
 
   def create 
@@ -78,7 +79,7 @@ class ChallengesController < ApplicationController
     receivers_arr.each do |receiver|
       ChallengeMailer.invite_friends(params[:sender], receiver, @challenge).deliver
     end
-    redirect_to yer_done_path
+    redirect_to yer_done_path(@challenge)
   end
 
   private
