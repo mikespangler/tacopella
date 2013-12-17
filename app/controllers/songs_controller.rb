@@ -27,8 +27,8 @@ class SongsController < ApplicationController
 
   def song_results
     @challenge = Challenge.find(params[:id])
-    api = Rdio::Api.new('nwqk6482vnzn47ph332m5e6v', 'TxxUNrJC3v')
-    @rdio_search = RdioSearch.new(api.search(params[:search_song],types='Song',never_or=nil,extras=nil,count=5))
+    client = RdioApi.new(:consumer_key => 'nwqk6482vnzn47ph332m5e6v', :consumer_secret => 'TxxUNrJC3v')
+    @rdio_search = RdioSearch.new(client.searchSuggestions(:query => params[:search_song]))
     render :partial => 'songs/song_results', :format => 'text/html'
   end
 

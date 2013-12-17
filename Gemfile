@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Rdio Playback
 gem 'rdio'
+gem 'rdio_api'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
