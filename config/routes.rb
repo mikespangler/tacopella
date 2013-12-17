@@ -2,13 +2,13 @@ Tacopella::Application.routes.draw do
   resources :songs
   resources :challenges
 
-   root 'challenges#welcome'
+  root 'challenges#welcome'
+
   get 'challenges/:id/songs/song_results' => 'songs#song_results', :as => :song_results 
   post 'songs/song_results' => 'challenges#update'
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+
    post 'challenges/add_songs' => 'challenges#add_songs', :as => :add_songs
-  # You can have the root of your site routed with "root"
+
    get 'challenges/:id/show' => 'challenges#show' , :as => :show_challenge
    get 'challenges/:id/songs/search' => 'songs#search_songs', :as => :search_songs
 
@@ -37,12 +37,8 @@ Tacopella::Application.routes.draw do
    
   # get 'challenges/:id/songs/song_results/show' => 'song'
 
-
-   # match "/auth/:provider/callback" => "sessions#create", via: [:get,:post]
-   # match "/signout" => "sessions#destroy", :as => :signout, via: [:get,:post]
-
-  # match "/auth/:provider/callback" => "sessions#create", via: [:get,:post]
-  # match "/signout" => "sessions#destroy", :as => :signout, via: [:get,:post]
+  match "/auth/:provider/callback" => "sessions#create", via: [:get,:post]
+  match "/signout" => "sessions#destroy", :as => :signout, via: [:get,:post]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
