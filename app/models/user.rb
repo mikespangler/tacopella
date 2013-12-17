@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  has_many :created_challenges, :foreign_key => "creator_id", :class_name => "Challenge"
+  has_many :challenges, :through => "user_challenges"
+  has_many :scores, :through => "user_challenges"
 
   def self.create_with_omniauth(auth)
     create! do |user|

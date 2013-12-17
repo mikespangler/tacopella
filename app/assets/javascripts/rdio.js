@@ -108,6 +108,7 @@ $(document).ready(function(){
       $('#correct').hide();
       $('#game_over').show();
       $('#score').show();
+      // $('#continue').show();
     }
   });
 });

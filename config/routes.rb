@@ -1,4 +1,6 @@
 Tacopella::Application.routes.draw do
+  resources :user_challenges
+
   resources :songs
   resources :challenges
 

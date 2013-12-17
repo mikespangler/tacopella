@@ -1,6 +1,8 @@
 class Challenge < ActiveRecord::Base
+  belongs_to :creator, :class_name => "User"
   has_many :songs
-  has_many :scores
+  has_many :users, :through => "User Challenges"
+  has_many :scores, :through => "User Challenges"
 
   attr_reader :difficulty_level
 
