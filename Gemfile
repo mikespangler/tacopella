@@ -33,10 +33,12 @@ gem 'binding_of_caller'
 
 gem 'foundation-rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
 # Rdio Oauth
 gem 'omniauth'
 gem 'omniauth-rdio'
