@@ -21,17 +21,17 @@ $(function(){
   $('#results_form').on('click', "#submit_song", function(e){
     e.preventDefault();
 
-    var add_song_path, challenge_id, song_key, song_name, artist_name;
+    var add_song_path, challenge_id, song_key, song_name, artist;
     add_song_path = "/songs/song_results";
     challenge_id = $('input:radio:checked').attr('data-challenge');
     song_key = $('input:radio:checked').attr('value');
     song_name = $('input:radio:checked').attr('data-songname');
-    artist_name = $('input:radio:checked').attr('data-artistname');
+    artist = $('input:radio:checked').attr('data-artist');
 
     data = {
       id: challenge_id,
       song: song_name,
-      artist: artist_name,
+      artist: artist,
       key: song_key
     };
 

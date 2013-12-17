@@ -1,7 +1,7 @@
 class RdioSearch
 
   attr_accessor :search_results, :results_hash
-
+  
   def initialize(search_q)
     #api = Rdio::Api.new('nwqk6482vnzn47ph332m5e6v', 'TxxUNrJC3v')
     @search_results = create_results_hash(search_q)
@@ -12,12 +12,11 @@ class RdioSearch
   def create_results_hash(search_q)
     results = []
     search_q.each do |result|
-      begin
       results << {
-        raise  
-        key: result.trackKeys[0] if !result.trackKeys[0].nil?, 
-        name: result.name if !result.trackKeys[0].nil?, 
-        artist: result.artist if !result.trackKeys[0].nil? }
+      :key => result["key"], 
+      :name => result.name, 
+      :artist_name => result.artist
+    }
     end
     results
   end

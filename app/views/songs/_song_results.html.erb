@@ -3,7 +3,7 @@
   <ul class="no-bullet"> 
     <% @rdio_search.search_results.each do |result| %>
     <li> 
-      <input type="radio" name="song" data-challenge="<%= @challenge.id %>" data-artistname="<%= result.artist_name %>" data-songname="<%= result.name %>" value="<%= result.key %>" /><%= "#{result.artist_name} - #{result.name}" %>
+      <input type="radio" name="song" data-challenge="<%= @challenge.id %>" data-artistname="<%= result[:artist_name] %>" data-songname="<%= result[:name] %>" value="<%= result[:key] %>" /><%= "#{result[:artist_name]} - #{result[:name]}" %>
     </li>
   <% end %>
   </ul>
