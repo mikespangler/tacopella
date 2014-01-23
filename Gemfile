@@ -51,6 +51,8 @@ gem 'pry'
 
 gem  'minitest', '~> 4.7.5'
 
+gem 'rvm-capistrano'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
