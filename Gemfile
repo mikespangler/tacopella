@@ -1,9 +1,13 @@
 source 'https://rubygems.org'
 
+gem 'bundler', '1.3.5'
+
 # Rdio Playback
 gem 'rdio'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
+
+gem 'atomic'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -44,6 +48,9 @@ gem 'omniauth'
 gem 'omniauth-rdio'
 
 gem 'pry'
+
+gem  'minitest', '~> 4.7.5'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

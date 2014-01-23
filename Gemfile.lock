@@ -135,12 +135,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  atomic
   better_errors
   binding_of_caller
+  bundler (= 1.3.5)
   coffee-rails (~> 4.0.0)
   foundation-rails
   jbuilder (~> 1.2)
   jquery-rails
+  minitest (~> 4.7.5)
   omniauth
   omniauth-rdio
   pry

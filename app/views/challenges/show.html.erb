@@ -13,7 +13,7 @@
     <param id="song_count" value="<%= @song_count %>">
     <!-- <param id="challenge_songs_array" value="<%#= @challenge.songs.all %>"> -->
     <!-- <param id="song_object" value="<%#= @song %>"> -->
-    <param id="song_name" value="<%= @song.name %>">
+    <param id="song_name" value="<%= @song.name if @song.name %>">
     <param id="play_key" value="<%= @song.play_key %>">
     <input class= "input field" id="guess" placeholder="Name that tune!"><br><br>
     <button id="play" class="button radius">Play Song</button>
