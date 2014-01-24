@@ -53,6 +53,8 @@ gem  'minitest', '~> 4.7.5'
 
 gem 'rvm-capistrano'
 
+gem 'therubyracer'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
