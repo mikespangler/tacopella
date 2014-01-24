@@ -1,4 +1,5 @@
 require 'bundler/capistrano' # for bundler support
+require "rvm/capistrano"
 
 set :application, "tacopella"
 set :repository,  "https://github.com/mikespangler/tacopella.git"
@@ -23,6 +24,8 @@ role :db,  "162.243.230.186", :primary => true # This is where Rails migrations 
 
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
+
+
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
